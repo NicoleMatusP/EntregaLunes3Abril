@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Piazzolla:opsz,wght@8..30,100;8..30,200;8..30,300;8..30,400;8..30,500;8..30,600;8..30,700;8..30,800;8..30,900&display=swap');
+
+html{
+    font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1,h2,h3,h4{
+    color: black;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+h1{
+    font-size: 3em;
+    padding: 0px;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h3{
+    font-size: 1.563em;
+}
+
+h4{
+    font-size: 1.438em;
+}
+
+p{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+}
+
+form{
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Nav */
+.botonera{
+    background-color: white;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    padding: 10px 80px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px rgb(201, 201, 201);
+ }
+ .botonera img{
+    width: 90%;
+ }
+     .botonera ul{
+         list-style: none;
+         display: flex;
+     }
+     .botonera ul li{
+        margin-left: 30px;
+      }
+ 
+      .botonera ul li a{
+         color: black;
+         text-decoration: none;
+        } 
+        .botonera ul li a:hover{
+            font-weight: 800;
+           }
+
+
+.parrafo-uno{
+    font-size: 1.063em;
+    line-height: 1.563em;
+}
+
+.parrafo-dos{
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* Index */
+
+.contenedor-inicio1{
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+   .contenedor-inicio1 img{
+      width: 100%;
+   }
+
+   .contenedor-inicio1 div{
+    width: 50%;
+   }
+   
+   .contenedor-inicio1 div h1{
+      margin-top: 0px;
+   }
+   .contenedor-inicio1 div button{
+      border: solid 1px;
+      border-radius: 4px;
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1.063em;
+      margin-top: 30px;
+   }
+
+.texto-1{
+    margin-right: 100px;
+    width: 50%;
+}
+
+.contenedor-inicio2{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  .contenedor-inicio2 figure{
+     width: 20%;
+  }
+  .contenedor-inicio2 figure img{
+    width: 50%;
+  }
+   .contenedor-inicio2 figure figcaption{
+      font-size: 3em;
+      font-weight: 800;
+      margin-top: 10px;
+   }
+   .contenedor-inicio2 figure p{
+      font-size: 1.4em;
+      font-weight: 800;
+      margin-top: 5px;
+   }
+
+.contenedor-inicio3{
+    margin: 200px 200px 80px 200px;
+}
+
+
+.contenedor-testimonios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+     .contenedor-testimonios figure{
+        width: 30%;
+        border: solid 1px rgb(201, 201, 201);
+        padding: 20px 30px;
+        margin: 40px;
+        text-align: start;
+        border-radius: 4px;
+    }
+        .contenedor-testimonios figure img{
+            width: 20%;
+        }
+        .contenedor-testimonios figure figcaption{
+            margin-top: 20px;
+            font-size: 1.438;
+            font-weight: 800;
+        }
+
+.texto-precios h1{
+    margin-top: 200px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.contenedor-precios{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 100px 0px 100px;
+}
+    .contenedor-precios div{
+        width: 30%;
+        margin: 80px 20px;
+        padding: 70px 40px;
+        border: solid 1px rgb(201, 201, 201);
+        border-radius: 6px;
+    }
+
+.margin-top-200{
+    margin-top: 200px;
+    text-align: center;
+}
+
+/* Contacto */
+
+.contenedor-contacto{
+    margin: 80px 200px ;
+    border: solid 1px rgb(201, 201, 201);
+    border-radius: 6px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-around;
+}
+   .contenedor-contacto div svg{
+      fill: black;
+      width: 20px;
+      margin-right: 10px;
+   }
+   .contenedor-contacto div div{
+      display: flex;
+   }
+   .contenedor-contacto div div p{
+      margin-top: 10px;
+      margin-bottom: 10px;
+   }
+
+/* Footer */
+
+footer{
+    margin-top: 90px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+   footer img{
+      width: 30%;
+   }
+
+   footer svg{
+      fill: black;
+      width: 30px;
+      margin-right: 10px;
+   }
+
+   footer a{
+    text-decoration: none;
+    color: black;
+   }
+
+.d-block{
+    display: flex;
+    flex-direction: column;
+}
+
+   /* Nosotros en grid + flex */
+
+.header-img-nosotros{
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.bg-gray{
+    background-color: rgb(167, 166, 167);
+}
+
+.grid-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 300px 400px 300px 300px 600px 300px;
+    gap: 10px;
+    grid-template-areas: 
+    "nosotros nosotros nosotros nosotros nosotros nosotros"
+    "img1 img1 img2 img2 img2 img2"
+    "img1 img1 img3 img3 img4 img4"
+    "equipo equipo equipo equipo equipo equipo"
+    "figuras figuras figuras figuras figuras figuras"
+    "trabajo trabajo trabajo trabajo trabajo trabajo";
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-main .nosotros{
+    grid-area: nosotros;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.grid-main .img1{
+    grid-area: img1;
+    width: 100%;
+}
+.grid-main .img2{
+    grid-area: img2;
+    width: 100%;
+}
+.grid-main .img3{
+    grid-area: img3;
+    width: 100%;
+}
+.grid-main .img4{
+    grid-area: img4;
+    width: 100%;
+}
+.grid-main .equipo{
+    grid-area: equipo;
+    text-align: center;
+    display: flex;
+    align-items: end;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 30px;
+}
+.grid-main .figuras{
+    grid-area: figuras;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.grid-main .figuras figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+  .grid-main figure figcaption{
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 30px;
+  }
+  .grid-main figure p{
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .grid-main .figuras figure img{
+    width: 70%;
+  }
+.grid-main .trabajo{
+    grid-area: trabajo;
+    border: solid 1px rgb(201, 201, 201);
+    border-radius: 6px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 20px;
+}
+  .grid-main .trabajo h1{
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  .grid-main .trabajo p{
+    text-align: center;
+    font-size: 1em;
+    margin-bottom:30px;
+  }
+
+/* Breakpoints zone */
+
+/* Nosotros */
+@media (max-width:800px) {
+    .grid-main{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 40vh 30vh 30vh 30vh 30vh 100vh 20vh;
+        grid-template-areas: 
+        "nosotros nosotros nosotros nosotros"
+        "img2 img2 img2 img2"
+        "img1 img1 img3 img3"
+        "img1 img1 img4 img4"
+        "equipo equipo equipo equipo"
+        "figuras figuras figuras figuras"
+        "trabajo trabajo trabajo trabajo";
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Nosotros */
+    .grid-main .nosotros{
+        text-align: center;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .grid-main .nosotros h1{
+        font-size: 2.2em;
+    }
+
+    /* Equipo */
+    .grid-main .equipo{
+        text-align: center;
+        display: flex;
+        align-items: end;
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-bottom: 30px;
+    }
+    .grid-main .equipo h1{
+        font-size: 2.2em;
+    }
+
+    /* Figuras */
+    .grid-main .figuras{
+        grid-area: figuras;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .grid-main .figuras figure{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+    }
+    
+      .grid-main figure figcaption{
+        font-size: 1em;
+        font-weight: 700;
+        margin-top: 20px;
+      }
+      .grid-main figure p{
+        font-size: 0.8em;
+        text-align: center;
+        margin-top: 5px;
+      }
+
+      /* Trabajo */
+      .grid-main .trabajo{
+        grid-area: trabajo;
+        border: solid 1px rgb(201, 201, 201);
+        border-radius: 6px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px;
+    }
+      .grid-main .trabajo h1{
+        text-align: center;
+        font-size: 1.8em;
+        margin-bottom: 10px;
+      }
+      .grid-main .trabajo p{
+        text-align: center;
+        font-size: 1em;
+        margin-bottom:30px;
+      }
+}
+
+@media (max-width:440px){
+    .grid-main{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 40vh 20vh 20vh 20vh 30vh 200vh 40vh;
+        grid-template-areas: 
+        "nosotros nosotros"
+        "img2 img2"
+        "img1 img3"
+        "img1 img4"
+        "equipo equipo"
+        "figuras figuras"
+        "trabajo trabajo";
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    /* Nosotros */
+    .grid-main .nosotros{
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .grid-main .nosotros h1{
+        font-size: 1.8em;
+    }
+    .grid-main .nosotros p{
+        font-size: 0.8em;
+    }
+
+    /* Equipo */
+    .grid-main .equipo{
+        text-align: center;
+        display: flex;
+        align-items: end;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+    .grid-main .equipo h1{
+        font-size: 1.8em;
+        margin-top: 40px;
+    }
+    .grid-main .equipo p{
+        font-size: 0.8em;
+    }
+
+    /* Figuras */
+    .grid-main .figuras{
+        grid-area: figuras;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .grid-main .figuras figure{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 50%;
+    }
+    
+      .grid-main figure figcaption{
+        font-size: 1em;
+        font-weight: 700;
+        margin-top: 20px;
+        text-align: center;
+      }
+      .grid-main figure p{
+        font-size: 0.8em;
+        text-align: center;
+        margin-top: 5px;
+      }
+
+      /* Trabajo */
+      .grid-main .trabajo{
+        grid-area: trabajo;
+        border: solid 1px rgb(201, 201, 201);
+        border-radius: 6px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px;
+    }
+      .grid-main .trabajo h1{
+        text-align: center;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+      .grid-main .trabajo p{
+        text-align: center;
+        font-size: 0.8em;
+        margin-bottom:30px;
+      }
+}
+
+/* Index */
+@media (max-width:800px) {
+    .contenedor-inicio1{
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+       .contenedor-inicio1 img{
+          width: 100%;
+          height: 100%;
+       }
+    
+       .contenedor-inicio1 div{
+        width: 100%;
+       }
+       
+       .contenedor-inicio1 div h1{
+          margin-top: 60px;
+          font-size: 2em;
+       }
+       .contenedor-inicio1 div button{
+          border: solid 1px;
+          border-radius: 4px;
+          background-color: black;
+          color: white;
+          padding: 10px 20px;
+          font-size: 1em;
+          margin-top: 30px;
+       }
+    
+    .contenedor-inicio2{
+        margin-top: 150px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+      .contenedor-inicio2 figure{
+         width: 20%;
+      }
+      .contenedor-inicio2 figure img{
+        width: 60%;
+      }
+       .contenedor-inicio2 figure figcaption{
+          font-size: 2.5em;
+          font-weight: 800;
+          margin-top: 10px;
+       }
+       .contenedor-inicio2 figure p{
+          font-size: 1.2em;
+          font-weight: 800;
+          margin-top: 5px;
+       }
+    
+    .contenedor-inicio3{
+        margin: 100px 80px 20px 80px;
+    }
+    .contenedor-inicio3 h2{
+        font-size: 1.8em;
+    }
+    .contenedor-inicio3 p{
+        font-size: 1em;
+    }
+    
+    .contenedor-testimonios{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+         .contenedor-testimonios figure{
+            width: 30%;
+            border: solid 1px rgb(201, 201, 201);
+            padding: 20px 30px;
+            margin: 40px;
+            text-align: start;
+            border-radius: 4px;
+        }
+            .contenedor-testimonios figure img{
+                width: 30%;
+            }
+            .contenedor-testimonios figure figcaption{
+                margin-top: 20px;
+                font-size: 1.438;
+                font-weight: 800;
+            }
+}
+
+@media (max-width:440px) {
+    .contenedor-inicio1{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+       .contenedor-inicio1 img{
+          width: 100%;
+          height: 100%;
+       }
+    
+       .contenedor-inicio1 div{
+        width: 100%;
+       }
+       
+       .contenedor-inicio1 div h1{
+          margin-top: 60px;
+          font-size: 2em;
+       }
+
+       .contenedor-inicio1 div p{
+        margin-top: 30px;
+        font-size: 1em;
+     }
+
+       .contenedor-inicio1 div button{
+          border: solid 1px;
+          border-radius: 4px;
+          background-color: black;
+          color: white;
+          padding: 10px 20px;
+          font-size: 1em;
+          margin-top: 30px;
+       }
+    
+    .contenedor-inicio2{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+      .contenedor-inicio2 figure{
+         width: 50%;
+         margin-bottom: 50px;
+      }
+      .contenedor-inicio2 figure img{
+        width: 60%;
+      }
+       .contenedor-inicio2 figure figcaption{
+          font-size: 2.5em;
+          font-weight: 800;
+          margin-top: 10px;
+       }
+       .contenedor-inicio2 figure p{
+          font-size: 1.2em;
+          font-weight: 800;
+          margin-top: 5px;
+       }
+    
+    .contenedor-inicio3{
+        margin: 100px 20px 20px 20px;
+    }
+    .contenedor-inicio3 h2{
+        font-size: 1.8em;
+    }
+    .contenedor-inicio3 p{
+        font-size: 1em;
+    }
+    
+    .contenedor-testimonios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+         .contenedor-testimonios figure{
+            width: 80%;
+            border: solid 1px rgb(201, 201, 201);
+            padding: 20px 30px;
+            margin-bottom: 10px;
+            text-align: start;
+            border-radius: 4px;
+        }
+            .contenedor-testimonios figure img{
+                width: 20%;
+            }
+            .contenedor-testimonios figure figcaption{
+                margin-top: 10px;
+                font-size: 1.438;
+                font-weight: 800;
+            }
+
+}
