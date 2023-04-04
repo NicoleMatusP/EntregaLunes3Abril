@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #f23e16;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="-163.5" y="-195.41" width="1409" height="1495.49"/>
+    </clipPath>
+  </defs>
+  <circle class="cls-4" cx="539.7" cy="536.94" r="525.97"/>
+  <g class="cls-2">
+    <image width="1158" height="1544" transform="translate(-146.06 36.17) scale(1.18)" xlink:href="../../../ComunidadXplore/Imagenes/EliasByN.png"/>
+  </g>
+  <path class="cls-3" d="M-155.82-65.92V1312.52H1242.91l-18.4-1378.45H-155.82ZM540,1065.81C249.51,1065.81,14.03,830.33,14.03,539.85S249.51,13.88,540,13.88s525.97,235.48,525.97,525.97-235.48,525.97-525.97,525.97Z"/>
+</svg>

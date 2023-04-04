@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1025.06 161.5">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: GalanoClassicDEMOAlt-Regular, 'Galano Classic DEMO Alt';
+      }
+
+      .cls-3 {
+        font-size: 112.11px;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        font-family: GalanoClassicDEMOAlt-Bold, 'Galano Classic DEMO Alt';
+        font-weight: 700;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <text class="cls-3" transform="translate(6 121.29) scale(.97 1)"><tspan class="cls-2" x="0" y="0">Co</tspan><tspan class="cls-1" x="165.7" y="0">m</tspan><tspan class="cls-2" x="271.53" y="0">unidad</tspan><tspan class="cls-5" x="659.88" y="0">Xp</tspan><tspan class="cls-6" x="819.3" y="0">l</tspan><tspan class="cls-5" x="856.4" y="0">o</tspan><tspan class="cls-4" x="924.79" y="0">r</tspan><tspan class="cls-5" x="974.01" y="0">e</tspan></text>
+  <polygon points="751.94 36.08 728.66 36.08 728.66 10.36 751.94 36.08"/>
+</svg>
