@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+h4{
+    color: $mainColor;
+    font-family: $mainFont;
+    font-weight: $textExtraBold;
+}
+
+h1{
+    font-size: $textXLg;
+    padding: 0px;
+}
+
+h2{
+    font-size: $textLg;
+}
+
+h3{
+    font-size: $textMd;
+}
+
+h4{
+    font-size: $textSm;
+}
+
+html{
+    font-family: $mainFont;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}

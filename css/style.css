@@ -180,6 +180,7 @@ form{
             font-weight: 800;
         }
 
+/* Precios */
 .texto-precios h1{
     margin-top: 200px;
     text-align: center;
@@ -198,7 +199,8 @@ form{
         border: solid 1px rgb(201, 201, 201);
         border-radius: 6px;
     }
-
+    
+/* ayuda */
 .margin-top-200{
     margin-top: 200px;
     text-align: center;

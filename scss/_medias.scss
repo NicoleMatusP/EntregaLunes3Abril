@@ -1,0 +1,396 @@
+// Nosotros
+@media (max-width:800px) {
+    .grid-main{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 40vh 30vh 30vh 30vh 30vh 100vh 20vh;
+        grid-template-areas: 
+        "nosotros nosotros nosotros nosotros"
+        "img2 img2 img2 img2"
+        "img1 img1 img3 img3"
+        "img1 img1 img4 img4"
+        "equipo equipo equipo equipo"
+        "figuras figuras figuras figuras"
+        "trabajo trabajo trabajo trabajo";
+        align-items: center;
+        justify-content: center;
+
+        .nosotros{
+            text-align: center;
+            margin-left: 80px;
+            margin-right: 80px;
+
+            h1{
+                font-size: 2.2em;
+            }
+        }
+
+        .equipo{
+            text-align: center;
+            display: flex;
+            align-items: end;
+            margin-left: 80px;
+            margin-right: 80px;
+            margin-bottom: 30px;
+
+            h1{
+                font-size: 2.2em;
+            }
+        }
+
+        .figuras{
+            grid-area: figuras;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-left: 20px;
+            margin-right: 20px;
+
+            figure{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 30%;
+
+                figcaption{
+                    font-size: 1em;
+                    font-weight: $textbold;
+                    margin-top: 20px;
+                }
+
+                p{
+                    font-size: 0.8em;
+                    text-align: center;
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        .trabajo{
+            grid-area: trabajo;
+            border: solid 1px rgb(201, 201, 201);
+            border-radius: 6px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 20px;
+
+            h1{
+                text-align: center;
+                font-size: 1.8em;
+                margin-bottom: 10px;
+            }
+
+            p{
+                text-align: center;
+                font-size: 1em;
+                margin-bottom:30px;
+            }
+        }
+    }
+}
+
+@media (max-width:440px){
+    .grid-main{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 40vh 20vh 20vh 20vh 30vh 200vh 40vh;
+        grid-template-areas: 
+        "nosotros nosotros"
+        "img2 img2"
+        "img1 img3"
+        "img1 img4"
+        "equipo equipo"
+        "figuras figuras"
+        "trabajo trabajo";
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+
+        .nosotros{
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            h1{
+                font-size: 1.8em;
+            }
+
+            p{
+                font-size: 0.8em;
+            }
+        }
+
+        .equipo{
+            text-align: center;
+            display: flex;
+            align-items: end;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+
+            h1{
+                font-size: 1.8em;
+                margin-top: 40px;
+            }
+
+            p{
+                font-size: 0.8em;
+            }
+        }
+
+        .figuras{
+            grid-area: figuras;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            figure{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                width: 50%;
+                
+                figcaption{
+                    font-size: 1em;
+                    font-weight:$textbold;
+                    margin-top: 20px;
+                    text-align: center;
+                }
+
+                p{
+                    font-size: 0.8em;
+                    text-align: center;
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        .trabajo{
+            grid-area: trabajo;
+            border: solid 1px rgb(201, 201, 201);
+            border-radius: 6px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 20px;
+
+            h1{
+                text-align: center;
+                font-size: 1.2em;
+                margin-bottom: 10px;
+            }
+
+            p{
+                text-align: center;
+                font-size: 0.8em;
+                margin-bottom:30px;
+            }
+        }
+    }
+}
+
+// Index
+@media (max-width:800px) {
+    .contenedor-inicio1{
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        
+        div{
+            width: 100%;
+
+            h1{
+                margin-top: 60px;
+                font-size: $textLg;
+            }
+
+            button{
+                border: solid 1px;
+                border-radius: 4px;
+                background-color: black;
+                color: white;
+                padding: 10px 20px;
+                font-size: 1em;
+                margin-top: 30px;
+            }
+        }
+    }
+    
+    .contenedor-inicio2{
+        margin-top: 150px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        figure{
+            width: 20%;
+
+            img{
+                width: 60%;
+            }
+
+            figcaption{
+                font-size: 2.5em;
+                font-weight: $textExtraBold;
+                margin-top: 10px;
+            }
+
+            p{
+                font-size: 1.2em;
+                font-weight: $textExtraBold;
+                margin-top: 5px;
+            }
+        }
+    }
+    
+    .contenedor-inicio3{
+        margin: 100px 80px 20px 80px;
+
+        h2{
+            font-size: 1.8em;
+        }
+
+        p{
+            font-size: 1em;
+        }
+    }
+    
+    .contenedor-testimonios{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        figure{
+            width: 30%;
+            border: solid 1px rgb(201, 201, 201);
+            padding: 20px 30px;
+            margin: 40px;
+            text-align: start;
+            border-radius: 4px;
+
+            img{
+                width: 30%;
+            }
+
+            figcaption{
+                margin-top: 20px;
+                font-size: $textSm;
+                font-weight: $textExtraBold;
+            }
+        }
+    }
+}
+
+@media (max-width:440px) {
+    .contenedor-inicio1{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        div{
+            width: 100%;
+
+            h1{
+                margin-top: 60px;
+                font-size: $textLg;
+            }
+
+            p{
+                margin-top: 30px;
+                font-size: 1em;
+            }
+
+            button{
+                border: solid 1px;
+                border-radius: 4px;
+                background-color: $mainColor;
+                color: white;
+                padding: 10px 20px;
+                font-size: 1em;
+                margin-top: 30px;
+            }
+        }
+    }
+    
+    .contenedor-inicio2{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        figure{
+            width: 50%;
+            margin-bottom: 50px;
+
+            img{
+                width: 60%;
+            }
+
+            figcaption{
+                font-size: 2.5em;
+                font-weight: $textExtraBold;
+                margin-top: 10px;
+            }
+
+            p{
+                font-size: 1.2em;
+                font-weight: $textExtraBold;
+                margin-top: 5px;
+            }
+        }
+    }
+    
+    .contenedor-inicio3{
+        margin: 100px 20px 20px 20px;
+
+        h2{
+            font-size: 1.8em;
+        }
+
+        p{
+            font-size: 1em;
+        }
+    }
+    
+    .contenedor-testimonios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        figure{
+            width: 80%;
+            border: solid 1px $secondColor;
+            padding: 20px 30px;
+            margin-bottom: 10px;
+            text-align: start;
+            border-radius: 4px;
+
+            img{
+                width: 20%;
+            }
+
+            figcaption{
+                margin-top: 10px;
+                font-size: $textSm;
+                font-weight: $textExtraBold;
+            }
+        }
+    }
+}
