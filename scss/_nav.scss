@@ -1,9 +1,10 @@
 // nesting
 
 .botonera{
+    background-color: white;
     font-family: $mainFont;
     font-weight: $textRegular;
-    font-size: 1em;
+    font-size: $textxxSm;
     padding: 10px 80px;
     position: fixed;
     top: 0px;

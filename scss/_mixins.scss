@@ -1,0 +1,43 @@
+// extends
+.btn-gral{
+    border: solid 1px;
+    border-radius: 4px;
+    background-color: $mainColor;
+    color: $tercerColor;
+}
+
+.box-gral{
+    border: $secondColor;
+    border-radius: 6px;
+}
+
+.box-testimonios{
+    @extend .box-gral;
+    width: 30%;
+    padding: 20px 30px;
+    margin: 40px;
+    text-align: start;
+}
+
+.box-trabajo{
+    @extend .box-gral;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 20px;
+}
+
+.box-precios{
+    @extend .box-gral;
+    width: 30%;
+    margin: 80px 20px;
+    padding: 70px 40px;
+}
+
+
+// mixins
+@mixin textos ($size, $line, $color){
+    font-size: $size;
+    line-height: $line;
+    color: $color;
+    font-family: $mainFont;
+}

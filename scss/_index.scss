@@ -18,12 +18,9 @@
         }
 
         button{
-            border: solid 1px;
-            border-radius: 4px;
-            background-color: $mainColor;
-            color: white;
+            font-family: $mainFont;
             padding: 10px 20px;
-            font-size: 1.063em;
+            font-size: $textxxSm;
             margin-top: 30px;
         }
     }
@@ -55,7 +52,7 @@
 
         p{
             font-size: $textSm;
-            font-weight: $textExtraBold;
+            font-weight: $textbold;
             margin-top: 5px;
         }
     }
@@ -73,12 +70,7 @@
     justify-content: center;
 
     figure{
-        width: 30%;
-        border: solid 1px rgb(201, 201, 201);
-        padding: 20px 30px;
-        margin: 40px;
-        text-align: start;
-        border-radius: 4px;
+        
 
         img{
             width: 20%;

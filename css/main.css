@@ -1,5 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Piazzolla:opsz,wght@8..30,100;8..30,200;8..30,300;8..30,400;8..30,500;8..30,600;8..30,700;8..30,800;8..30,900&display=swap");
+.btn-gral {
+  border: solid 1px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+}
+
+.box-gral, .box-precios, .box-trabajo, .box-testimonios {
+  border: rgb(201, 201, 201);
+  border-radius: 6px;
+}
+
+.box-testimonios {
+  width: 30%;
+  padding: 20px 30px;
+  margin: 40px;
+  text-align: start;
+}
+
+.box-trabajo {
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 20px;
+}
+
+.box-precios {
+  width: 30%;
+  margin: 80px 20px;
+  padding: 70px 40px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: black;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 2.5em;
+  padding: 0px;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+h4 {
+  font-size: 1.563em;
+}
+
+html {
+  font-family: "Manrope", sans-serif;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
 .botonera {
+  background-color: white;
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 1em;
@@ -31,37 +96,75 @@
   font-weight: 800;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  color: black;
+.contenedor-inicio1 {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contenedor-inicio1 img {
+  width: 100%;
+}
+.contenedor-inicio1 div {
+  width: 50%;
+}
+.contenedor-inicio1 div h1 {
+  margin-top: 0px;
+}
+.contenedor-inicio1 div button {
   font-family: "Manrope", sans-serif;
+  padding: 10px 20px;
+  font-size: 1em;
+  margin-top: 30px;
+}
+
+.texto-1 {
+  margin-right: 100px;
+  width: 50%;
+}
+
+.contenedor-inicio2 {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contenedor-inicio2 figure {
+  width: 20%;
+}
+.contenedor-inicio2 figure img {
+  width: 50%;
+}
+.contenedor-inicio2 figure figcaption {
+  font-size: 2.5em;
   font-weight: 800;
+  margin-top: 10px;
 }
-
-h1 {
-  font-size: 3em;
-  padding: 0px;
-}
-
-h2 {
-  font-size: 2em;
-}
-
-h3 {
+.contenedor-inicio2 figure p {
   font-size: 1.563em;
+  font-weight: 700;
+  margin-top: 5px;
 }
 
-h4 {
-  font-size: 1.438em;
+.contenedor-inicio3 {
+  margin: 200px 200px 80px 200px;
 }
 
-html {
-  font-family: "Manrope", sans-serif;
-  box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
+.contenedor-testimonios {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contenedor-testimonios figure img {
+  width: 20%;
+}
+.contenedor-testimonios figure figcaption {
+  margin-top: 20px;
+  font-size: 1.563em;
+  font-weight: 800;
 }
 
 .header-img-nosotros {
@@ -71,7 +174,7 @@ html {
 }
 
 .bg-gray {
-  background-color: rgb(167, 166, 167);
+  background-color: rgb(201, 201, 201);
 }
 
 .grid-main {
@@ -145,11 +248,6 @@ html {
 }
 .grid-main .trabajo {
   grid-area: trabajo;
-  border: solid 1px rgb(201, 201, 201);
-  border-radius: 6px;
-  margin-left: 200px;
-  margin-right: 200px;
-  padding: 20px;
 }
 .grid-main .trabajo .h1 {
   text-align: center;
@@ -175,97 +273,13 @@ html {
 
 .contenedor-precios {
   display: flex;
-  justify-content: space-between;
-  margin: 0px 100px 0px 100px;
-}
-.contenedor-precios div {
-  width: 30%;
-  margin: 80px 20px;
-  padding: 70px 40px;
-  border: solid 1px rgb(201, 201, 201);
-  border-radius: 6px;
-}
-
-.contenedor-inicio1 {
-  margin-left: 80px;
-  margin-right: 80px;
-  margin-top: 200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.contenedor-inicio1 img {
-  width: 100%;
-}
-.contenedor-inicio1 div {
-  width: 50%;
-}
-.contenedor-inicio1 div h1 {
-  margin-top: 0px;
-}
-.contenedor-inicio1 div button {
-  border: solid 1px;
-  border-radius: 4px;
-  background-color: black;
-  color: white;
-  padding: 10px 20px;
-  font-size: 1.063em;
-  margin-top: 30px;
-}
-
-.texto-1 {
-  margin-right: 100px;
-  width: 50%;
-}
-
-.contenedor-inicio2 {
-  margin-top: 150px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.contenedor-inicio2 figure {
-  width: 20%;
-}
-.contenedor-inicio2 figure img {
-  width: 50%;
-}
-.contenedor-inicio2 figure figcaption {
-  font-size: 3em;
-  font-weight: 800;
-  margin-top: 10px;
-}
-.contenedor-inicio2 figure p {
-  font-size: 1.438em;
-  font-weight: 800;
-  margin-top: 5px;
-}
-
-.contenedor-inicio3 {
-  margin: 200px 200px 80px 200px;
-}
-
-.contenedor-testimonios {
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 0px 80px 0px 80px;
 }
-.contenedor-testimonios figure {
-  width: 30%;
-  border: solid 1px rgb(201, 201, 201);
-  padding: 20px 30px;
-  margin: 40px;
-  text-align: start;
-  border-radius: 4px;
-}
-.contenedor-testimonios figure img {
-  width: 20%;
-}
-.contenedor-testimonios figure figcaption {
-  margin-top: 20px;
-  font-size: 1.438em;
-  font-weight: 800;
+.contenedor-precios div .p-1 {
+  padding: 0px;
+  margin: 100px;
 }
 
 .contenedor-contacto {
@@ -327,7 +341,7 @@ footer a {
     margin-right: 80px;
   }
   .grid-main .nosotros h1 {
-    font-size: 2.2em;
+    font-size: 2em;
   }
   .grid-main .equipo {
     text-align: center;
@@ -338,7 +352,7 @@ footer a {
     margin-bottom: 30px;
   }
   .grid-main .equipo h1 {
-    font-size: 2.2em;
+    font-size: 2em;
   }
   .grid-main .figuras {
     grid-area: figuras;
@@ -361,7 +375,7 @@ footer a {
     margin-top: 20px;
   }
   .grid-main .figuras figure p {
-    font-size: 0.8em;
+    font-size: 1.8em;
     text-align: center;
     margin-top: 5px;
   }
@@ -446,7 +460,7 @@ footer a {
   }
   .grid-main .trabajo {
     grid-area: trabajo;
-    border: solid 1px rgb(201, 201, 201);
+    border: rgb(201, 201, 201);
     border-radius: 6px;
     margin-left: 10px;
     margin-right: 10px;
@@ -454,7 +468,7 @@ footer a {
   }
   .grid-main .trabajo h1 {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
     margin-bottom: 10px;
   }
   .grid-main .trabajo p {
@@ -510,7 +524,7 @@ footer a {
     margin-top: 10px;
   }
   .contenedor-inicio2 figure p {
-    font-size: 1.2em;
+    font-size: 1 1em;
     font-weight: 800;
     margin-top: 5px;
   }
@@ -542,7 +556,7 @@ footer a {
   }
   .contenedor-testimonios figure figcaption {
     margin-top: 20px;
-    font-size: 1.438em;
+    font-size: 1.563em;
     font-weight: 800;
   }
 }
@@ -598,7 +612,7 @@ footer a {
     margin-top: 10px;
   }
   .contenedor-inicio2 figure p {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 800;
     margin-top: 5px;
   }
@@ -629,7 +643,7 @@ footer a {
   }
   .contenedor-testimonios figure figcaption {
     margin-top: 10px;
-    font-size: 1.438em;
+    font-size: 1.563em;
     font-weight: 800;
   }
 }

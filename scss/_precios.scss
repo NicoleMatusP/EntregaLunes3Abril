@@ -6,14 +6,14 @@
 
 .contenedor-precios{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0px 100px 0px 100px;
+    margin: 0px 80px 0px 80px;
 
     div{
-        width: 30%;
-        margin: 80px 20px;
-        padding: 70px 40px;
-        border: solid 1px rgb(201, 201, 201);
-        border-radius: 6px;
+        .p-1{
+            padding: 0px;
+            margin: 100px;
+        }
     }
 }
