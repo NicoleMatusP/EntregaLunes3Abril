@@ -11,14 +11,19 @@
     }
 
     div{
-        width: 50%;
+        width: 100%;
 
         h1{
             margin-top: 0px;
         }
 
+        p{
+            font-size: $textSm;
+        }
+
         button{
             font-family: $mainFont;
+            font-weight: $textRegular;
             padding: 10px 20px;
             font-size: $textxxSm;
             margin-top: 30px;
@@ -32,10 +37,10 @@
 }
 
 .contenedor-inicio2{
-    margin-top: 150px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 
     figure{
         width: 20%;
@@ -59,7 +64,7 @@
 }
 
 .contenedor-inicio3{
-    margin: 200px 200px 80px 200px;
+    margin: 100px 200px 20px 200px;
 }
 
 
@@ -70,8 +75,6 @@
     justify-content: center;
 
     figure{
-        
-
         img{
             width: 20%;
         }

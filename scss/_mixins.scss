@@ -7,15 +7,15 @@
 }
 
 .box-gral{
-    border: $secondColor;
+    border: solid 1px $secondColor;
     border-radius: 6px;
 }
 
 .box-testimonios{
     @extend .box-gral;
-    width: 30%;
+    width: 40%;
     padding: 20px 30px;
-    margin: 40px;
+    margin: 30px;
     text-align: start;
 }
 
@@ -33,11 +33,20 @@
     padding: 70px 40px;
 }
 
+.box-contacto{
+    @extend .box-gral;
+    margin: 80px 200px ;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
 
 // mixins
-@mixin textos ($size, $line, $color){
+@mixin textos ($size, $weight, $marginbottom, $margintop){
     font-size: $size;
-    line-height: $line;
-    color: $color;
+    font-weight: $weight;
+    margin-bottom: $marginbottom;
+    margin-top: $margintop;
     font-family: $mainFont;
 }

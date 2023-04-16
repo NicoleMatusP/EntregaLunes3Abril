@@ -8,6 +8,15 @@ footer{
         width: 30%;
     }
 
+    .d-block{
+        display: flex;
+        flex-direction: column;
+        &:hover{
+            font-weight: $textbold;
+            color: black;
+        }
+    }
+
     svg{
         fill: $mainColor;
         width: 30px;
@@ -18,9 +27,4 @@ footer{
         text-decoration: none;
         color: $mainColor;
     }
-}
-
-.d-block{
-    display: flex;
-    flex-direction: column;
 }
