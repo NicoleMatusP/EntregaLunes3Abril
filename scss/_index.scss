@@ -18,7 +18,7 @@
         }
 
         p{
-            font-size: $textSm;
+            @include textos (1.5em, 400, 30px, 30px);
         }
 
         button{
@@ -27,6 +27,9 @@
             padding: 10px 20px;
             font-size: $textxxSm;
             margin-top: 30px;
+            border-radius: 4px;
+            background-color: $mainColor;
+            color: $tercerColor;
         }
     }
 }
@@ -81,8 +84,12 @@
 
         figcaption{
             margin-top: 20px;
-            font-size: $textSm;
-            font-weight: $textExtraBold;
+            font-size: $textxSm;
+            font-weight: $textMedium;
+        }
+
+        p{
+            @include textos (1em, 400, 10px, 10px);
         }
     }
 }
