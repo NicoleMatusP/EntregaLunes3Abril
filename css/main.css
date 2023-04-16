@@ -24,10 +24,10 @@
 }
 
 .box-contacto {
-  margin: 80px 200px;
-  padding: 20px 40px;
+  margin: 40px 200px;
+  padding: 50px 40px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 h1,
@@ -191,47 +191,42 @@ html {
   margin-bottom: 50px;
 }
 
-.bg-gray {
-  background-color: rgb(201, 201, 201);
-}
-
 .grid-main {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 300px 400px 300px 300px 600px 300px;
+  grid-template-rows: 250px 600px 90px 750px 300px;
   gap: 10px;
-  grid-template-areas: "nosotros nosotros nosotros nosotros nosotros nosotros" "img1 img1 img2 img2 img2 img2" "img1 img1 img3 img3 img4 img4" "equipo equipo equipo equipo equipo equipo" "figuras figuras figuras figuras figuras figuras" "trabajo trabajo trabajo trabajo trabajo trabajo";
+  grid-template-areas: "nosotros nosotros nosotros nosotros nosotros nosotros" "img img img img img img" "equipo equipo equipo equipo equipo equipo" "figuras figuras figuras figuras figuras figuras" "trabajo trabajo trabajo trabajo trabajo trabajo";
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .grid-main .nosotros {
   grid-area: nosotros;
   text-align: center;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+.grid-main .nosotros p {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  font-family: "Manrope", sans-serif;
+}
+.grid-main .img {
+  display: flex;
+  justify-content: center;
+  grid-area: img;
   margin-left: 200px;
   margin-right: 200px;
 }
-.grid-main .img1 {
-  grid-area: img1;
-  width: 100%;
-}
-.grid-main .img2 {
-  grid-area: img2;
-  width: 100%;
-}
-.grid-main .img3 {
-  grid-area: img3;
-  width: 100%;
-}
-.grid-main .img4 {
-  grid-area: img4;
+.grid-main .img .img2 {
   width: 100%;
 }
 .grid-main .equipo {
   grid-area: equipo;
   text-align: center;
-  display: flex;
-  align-items: end;
   margin-left: 200px;
   margin-right: 200px;
   margin-bottom: 30px;
@@ -241,12 +236,12 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: start;
   margin-left: 100px;
   margin-right: 100px;
 }
 .grid-main .figuras figure {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   width: 30%;
@@ -257,30 +252,29 @@ html {
   margin-top: 30px;
 }
 .grid-main .figuras figure p {
-  font-size: 0.8em;
-  text-align: center;
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 0px;
   margin-top: 5px;
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .grid-main .figuras figure img {
-  width: 70%;
+  width: 60%;
 }
 .grid-main .trabajo {
   grid-area: trabajo;
-}
-.grid-main .trabajo .h1 {
   text-align: center;
-  font-size: 1.8em;
+}
+.grid-main .trabajo h2 {
   margin-bottom: 10px;
 }
 .grid-main .trabajo p {
   text-align: center;
   font-size: 1em;
   margin-bottom: 30px;
-}
-
-.margin-top-200 {
-  margin-top: 200px;
-  text-align: center;
 }
 
 .texto-precios h1 {
@@ -295,17 +289,84 @@ html {
   margin: 0px 80px 0px 80px;
 }
 
-.box-contacto div svg {
+.header-nosotros h1 {
+  margin-top: 130px;
+  text-align: center;
+}
+.header-nosotros p {
+  font-size: 1.4em;
+  font-weight: 400;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+}
+
+.box-contacto .form {
+  width: 50%;
+}
+.box-contacto .form h2 {
+  margin-bottom: 30px;
+}
+.box-contacto .form label {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-family: "Manrope", sans-serif;
+}
+.box-contacto .form textarea {
+  font-family: "Manrope", sans-serif;
+  font-size: 1em;
+  text-align: start;
+  padding: 8px 0px 8px 8px;
+  margin-top: 30px;
+  border: solid 1px rgb(201, 201, 201);
+  border-radius: 4px;
+  width: 100%;
+}
+.box-contacto .form input {
+  width: 100%;
+  background-color: white;
+  border: solid 1px rgb(201, 201, 201);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-family: "Manrope", sans-serif;
+  font-size: 1em;
+  text-align: start;
+  padding: 8px 0px 8px 8px;
+}
+.box-contacto .form button {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  padding: 10px 20px;
+  font-size: 1em;
+  margin-top: 30px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+}
+.box-contacto .info-contacto {
+  display: flex;
+  flex-direction: column;
+}
+.box-contacto .info-contacto h2 {
+  margin-bottom: 30px;
+}
+.box-contacto .info-contacto div {
+  display: flex;
+}
+.box-contacto .info-contacto div svg {
   fill: black;
   width: 20px;
   margin-right: 10px;
 }
-.box-contacto div div {
-  display: flex;
-}
-.box-contacto div div p {
-  margin-top: 10px;
+.box-contacto .info-contacto div p {
+  font-size: 1.1em;
+  font-weight: 400;
   margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: "Manrope", sans-serif;
 }
 
 footer {
@@ -721,6 +782,126 @@ footer a {
   footer a {
     text-decoration: none;
     color: black;
+  }
+}
+@media (max-width: 1300px) {
+  .box-contacto {
+    margin: 40px 100px;
+    padding: 50px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1100px) {
+  .box-contacto {
+    margin: 40px 40px;
+    padding: 50px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 970px) {
+  .box-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 60px;
+    padding: 40px 30px;
+  }
+  .box-contacto .form {
+    width: 100%;
+  }
+  .box-contacto .form h2 {
+    margin-bottom: 30px;
+  }
+  .box-contacto .form label {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-family: "Manrope", sans-serif;
+  }
+  .box-contacto .form textarea {
+    font-family: "Manrope", sans-serif;
+    font-size: 1em;
+    text-align: start;
+    padding: 8px 0px 8px 8px;
+    margin-top: 30px;
+    border: solid 1px rgb(201, 201, 201);
+    border-radius: 4px;
+    width: 100%;
+  }
+  .box-contacto .form input {
+    width: 100%;
+    background-color: white;
+    border: solid 1px rgb(201, 201, 201);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-family: "Manrope", sans-serif;
+    font-size: 1em;
+    text-align: start;
+    padding: 8px 0px 8px 8px;
+  }
+  .box-contacto .form button {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    padding: 10px 20px;
+    font-size: 1em;
+    margin-top: 30px;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+  }
+  .box-contacto .info-contacto {
+    display: flex;
+    flex-direction: column;
+  }
+  .box-contacto .info-contacto h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .box-contacto .info-contacto div {
+    display: flex;
+  }
+  .box-contacto .info-contacto div svg {
+    fill: black;
+    width: 20px;
+    margin-right: 10px;
+  }
+  .box-contacto .info-contacto div p {
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: "Manrope", sans-serif;
+  }
+}
+@media (max-width: 610px) {
+  .header-nosotros h1 {
+    font-size: 2.5em;
+    margin-top: 130px;
+    text-align: center;
+  }
+  .header-nosotros p {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 8px;
+    font-family: "Manrope", sans-serif;
+    text-align: center;
+  }
+  .box-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 30px;
+    padding: 30px 30px;
+  }
+  .box-contacto .form h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  .info-contacto {
+    display: flex;
+    flex-direction: column;
   }
 }
 
