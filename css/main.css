@@ -289,11 +289,11 @@ html {
   margin: 0px 80px 0px 80px;
 }
 
-.header-nosotros h1 {
+.header-contacto h1 {
   margin-top: 130px;
   text-align: center;
 }
-.header-nosotros p {
+.header-contacto p {
   font-size: 1.4em;
   font-weight: 400;
   margin-bottom: 0px;
@@ -353,15 +353,15 @@ html {
 .box-contacto .info-contacto h2 {
   margin-bottom: 30px;
 }
-.box-contacto .info-contacto div {
+.box-contacto .info-contacto .info {
   display: flex;
 }
-.box-contacto .info-contacto div svg {
+.box-contacto .info-contacto .info svg {
   fill: black;
   width: 20px;
   margin-right: 10px;
 }
-.box-contacto .info-contacto div p {
+.box-contacto .info-contacto .info p {
   font-size: 1.1em;
   font-weight: 400;
   margin-bottom: 10px;
@@ -546,6 +546,14 @@ footer a {
     margin-bottom: 30px;
   }
 }
+@media (max-width: 1000px) {
+  .contenedor-inicio1 h1 {
+    font-size: 2.5em;
+  }
+  .contenedor-inicio1 p {
+    font-size: 1.8em;
+  }
+}
 @media (max-width: 800px) {
   .contenedor-inicio1 {
     margin-left: 80px;
@@ -635,6 +643,19 @@ footer a {
     margin-top: 20px;
     font-size: 1.438em;
     font-weight: 600;
+  }
+}
+@media (max-width: 600px) {
+  .contenedor-inicio1 {
+    margin-left: 60px;
+    margin-right: 86px;
+    margin-top: 100px;
+  }
+  .contenedor-inicio1 h1 {
+    font-size: 1.8em;
+  }
+  .contenedor-inicio1 p {
+    font-size: 1.8em;
   }
 }
 @media (max-width: 440px) {
@@ -784,6 +805,34 @@ footer a {
     color: black;
   }
 }
+@media (max-width: 560px) {
+  .botonera {
+    background-color: white;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    padding: 10px 10px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px rgb(201, 201, 201);
+  }
+  .botonera img {
+    width: 80%;
+  }
+}
+@media (max-width: 420px) {
+  .botonera {
+    flex-wrap: nowrap;
+  }
+  .botonera img {
+    width: 80%;
+  }
+}
 @media (max-width: 1300px) {
   .box-contacto {
     margin: 40px 100px;
@@ -859,15 +908,15 @@ footer a {
     margin-top: 50px;
     margin-bottom: 30px;
   }
-  .box-contacto .info-contacto div {
+  .box-contacto .info-contacto .info {
     display: flex;
   }
-  .box-contacto .info-contacto div svg {
+  .box-contacto .info-contacto .info svg {
     fill: black;
     width: 20px;
     margin-right: 10px;
   }
-  .box-contacto .info-contacto div p {
+  .box-contacto .info-contacto .info p {
     font-size: 1.1em;
     font-weight: 400;
     margin-bottom: 10px;
@@ -876,12 +925,12 @@ footer a {
   }
 }
 @media (max-width: 610px) {
-  .header-nosotros h1 {
+  .header-contacto h1 {
     font-size: 2.5em;
     margin-top: 130px;
     text-align: center;
   }
-  .header-nosotros p {
+  .header-contacto p {
     font-size: 1.2em;
     font-weight: 400;
     margin-bottom: 0px;
@@ -899,9 +948,109 @@ footer a {
     font-size: 1.8em;
     margin-bottom: 10px;
   }
-  .info-contacto {
+  .box-contacto .info-contacto {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  .header-contacto h1 {
+    font-size: 2em;
+    margin-top: 130px;
+    text-align: center;
+  }
+  .header-contacto p {
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-family: "Manrope", sans-serif;
+    text-align: center;
+  }
+  .box-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 20px;
+    padding: 20px 20px;
+  }
+  .box-contacto .form h2 {
+    font-size: 1.563em;
+    margin-bottom: 10px;
+  }
+  .box-contacto .form button {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    padding: 5px 20px;
+    font-size: 1em;
+    margin-top: 30px;
+  }
+  .box-contacto .info-contacto {
+    display: flex;
+    flex-direction: column;
+  }
+  .box-contacto .info-contacto h2 {
+    font-size: 1.563em;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .header-contacto h1 {
+    font-size: 1.8em;
+    margin-bottom: 0px;
+    margin-top: 80px;
+  }
+  .box-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 20px;
+    padding: 20px 10px;
+  }
+  .box-contacto .form h2 {
+    font-size: 1.438em;
+    margin-bottom: 8px;
+  }
+  .box-contacto .form label {
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 8px;
+    font-family: "Manrope", sans-serif;
+  }
+  .box-contacto .form textarea {
+    font-size: 0.8em;
+    margin-top: 20px;
+  }
+  .box-contacto .form input {
+    font-size: 0.8em;
+    padding: 5px 0px 5px 8px;
+  }
+  .box-contacto .form button {
+    font-size: 0.8em;
+    margin-top: 10px;
+  }
+  .box-contacto .info-contacto {
+    display: flex;
+    flex-direction: column;
+  }
+  .box-contacto .info-contacto h2 {
+    margin-top: 40px;
+    font-size: 1.438em;
+    margin-bottom: 8px;
+  }
+  .box-contacto .info-contacto .info {
+    display: flex;
+  }
+  .box-contacto .info-contacto .info svg {
+    fill: black;
+    width: 20px;
+    margin-right: 10px;
+  }
+  .box-contacto .info-contacto .info p {
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: "Manrope", sans-serif;
   }
 }
 
