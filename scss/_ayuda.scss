@@ -1,0 +1,23 @@
+.titulo-ayuda{
+    margin-bottom: 50px;
+    margin-top: 120px;
+    text-align: center;
+
+    p{
+        @include textos (1.5em, 400, 0px, 30px);
+    }
+}
+
+.accordion{
+    margin-left: 300px;
+    margin-right: 300px;
+    font-family: $mainFont;
+
+    .accordion-button{
+        @include textos (0.6em, 600, 0px, 0px);
+        &:not(.collapsed){
+            color: black;
+            background-color: $tercerColor;
+        }
+    }
+}

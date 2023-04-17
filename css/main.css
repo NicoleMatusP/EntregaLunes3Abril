@@ -328,6 +328,36 @@ html {
   margin-bottom: 30px;
 }
 
+.titulo-ayuda {
+  margin-bottom: 50px;
+  margin-top: 120px;
+  text-align: center;
+}
+.titulo-ayuda p {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  font-family: "Manrope", sans-serif;
+}
+
+.accordion {
+  margin-left: 300px;
+  margin-right: 300px;
+  font-family: "Manrope", sans-serif;
+}
+.accordion .accordion-button {
+  font-size: 0.6em;
+  font-weight: 600;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-family: "Manrope", sans-serif;
+}
+.accordion .accordion-button:not(.collapsed) {
+  color: black;
+  background-color: white;
+}
+
 .titulo-precios h1 {
   margin-top: 120px;
   text-align: center;
@@ -1321,6 +1351,117 @@ footer a {
   .contenedor-precios .box-precios button {
     font-size: 0.8em;
     margin-top: 20px;
+  }
+}
+@media (max-width: 1300px) {
+  .accordion {
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: "Manrope", sans-serif;
+  }
+}
+@media (max-width: 900px) {
+  .titulo-ayuda {
+    margin: 110px, 80px, 50px, 80px;
+    text-align: center;
+  }
+  .titulo-ayuda p {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-family: "Manrope", sans-serif;
+  }
+  .accordion {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: "Manrope", sans-serif;
+  }
+}
+@media (max-width: 700px) {
+  .titulo-ayuda {
+    margin-bottom: 50px;
+    margin-top: 120px;
+    text-align: center;
+  }
+  .titulo-ayuda h1 {
+    font-size: 2.5em;
+  }
+  .titulo-ayuda p {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-family: "Manrope", sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .accordion {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
+@media (max-width: 500px) {
+  .titulo-ayuda {
+    margin-bottom: 50px;
+    margin-top: 100px;
+    text-align: center;
+  }
+  .titulo-ayuda h1 {
+    font-size: 2.5em;
+  }
+  .titulo-ayuda p {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-family: "Manrope", sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .accordion {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .accordion .accordion-button {
+    font-size: 0.5em;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: "Manrope", sans-serif;
+  }
+}
+@media (max-width: 320px) {
+  .titulo-ayuda {
+    margin-bottom: 30px;
+    margin-top: 80px;
+    text-align: center;
+  }
+  .titulo-ayuda h1 {
+    font-size: 1.8em;
+  }
+  .titulo-ayuda p {
+    font-size: 0.9em;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-family: "Manrope", sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .accordion {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .accordion .accordion-button {
+    font-size: 0.4em;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: "Manrope", sans-serif;
+  }
+  .accordion .accordion-body {
+    font-size: 0.8em;
   }
 }
 @keyframes animateindex {
