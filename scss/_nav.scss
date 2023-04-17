@@ -29,8 +29,9 @@
             a{
                 color: $mainColor;
                 text-decoration: none;
+                cursor: pointer;
                 &:hover{
-                    font-weight: $textExtraBold
+                    font-weight: $textExtraBold;
                 }
             }
         }

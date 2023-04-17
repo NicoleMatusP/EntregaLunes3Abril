@@ -1,5 +1,7 @@
 node_modules/
+*.map
 *.vsc
 *.log
 *.ia
 *.psd
+*.txt

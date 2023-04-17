@@ -19,8 +19,13 @@
 
 .box-precios {
   width: 30%;
-  margin: 80px 20px;
-  padding: 70px 40px;
+  margin: 30px 20px;
+  padding: 30px 30px;
+}
+.box-precios:hover {
+  transform: scale(1.099);
+  transition: all 1s;
+  cursor: pointer;
 }
 
 .box-contacto {
@@ -37,6 +42,11 @@ h4 {
   color: black;
   font-family: "Manrope", sans-serif;
   font-weight: 800;
+}
+
+p {
+  color: black;
+  font-family: "Manrope", sans-serif;
 }
 
 h1 {
@@ -91,6 +101,7 @@ html {
 .botonera ul li a {
   color: black;
   text-decoration: none;
+  cursor: pointer;
 }
 .botonera ul li a:hover {
   font-weight: 800;
@@ -103,9 +114,6 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-.contenedor-inicio1 img {
-  width: 100%;
 }
 .contenedor-inicio1 div {
   width: 100%;
@@ -130,7 +138,70 @@ html {
   background-color: black;
   color: white;
 }
+.contenedor-inicio1 .animaciones {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.contenedor-inicio1 .animaciones .animate1 {
+  height: 20%;
+  border-radius: 50px;
+  background-color: blue;
+  animation-name: animateindex;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.contenedor-inicio1 .animaciones .animate2 {
+  height: 10%;
+  border-radius: 20px;
+  background-color: rgb(226, 213, 24);
+  animation-name: animateindex;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+.contenedor-inicio1 .animaciones .animate3 {
+  height: 20%;
+  border-radius: 60px;
+  background-color: rgb(226, 24, 24);
+  animation-name: animateindex;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+.contenedor-inicio1 .animaciones .animate4 {
+  height: 20%;
+  border-radius: 4px;
+  background-color: rgb(4, 5, 12);
+  animation-name: animateindex;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
 
+@keyframes animateindex {
+  0% {
+    width: 10%;
+  }
+  25% {
+    width: 15%;
+  }
+  50% {
+    width: 25%;
+  }
+  75% {
+    width: 60%;
+  }
+  80% {
+    width: 80%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 .texto-1 {
   margin-right: 100px;
   width: 50%;
@@ -277,8 +348,8 @@ html {
   margin-bottom: 30px;
 }
 
-.texto-precios h1 {
-  margin-top: 200px;
+.titulo-precios h1 {
+  margin-top: 120px;
   text-align: center;
   margin-bottom: 0px;
 }
@@ -287,6 +358,55 @@ html {
   display: flex;
   justify-content: space-between;
   margin: 0px 80px 0px 80px;
+}
+.contenedor-precios .box-precios {
+  padding: 20px 20px;
+}
+.contenedor-precios .box-precios h3 {
+  font-size: 1.8em;
+  font-weight: 800;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  font-family: "Manrope", sans-serif;
+}
+.contenedor-precios .box-precios .precio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+.contenedor-precios .box-precios .precio h1 {
+  font-size: 2.5em;
+  font-weight: 800;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-family: "Manrope", sans-serif;
+}
+.contenedor-precios .box-precios .precio p {
+  font-size: 0.8em;
+  font-weight: 600;
+  margin: 0px;
+}
+.contenedor-precios .box-precios .puntos {
+  margin-top: 30px;
+}
+.contenedor-precios .box-precios .puntos p {
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: "Manrope", sans-serif;
+  text-align: start;
+}
+.contenedor-precios .box-precios button {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  padding: 5px 20px;
+  font-size: 1em;
+  margin-top: 30px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
 }
 
 .header-contacto h1 {
@@ -1051,6 +1171,176 @@ footer a {
     margin-bottom: 10px;
     margin-top: 10px;
     font-family: "Manrope", sans-serif;
+  }
+}
+@media (max-width: 1090px) {
+  .contenedor-precios {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px 0px 20px;
+  }
+}
+@media (max-width: 840px) {
+  .contenedor-precios .box-precios h3 {
+    font-size: 2em;
+    font-weight: 800;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-family: "Manrope", sans-serif;
+  }
+  .contenedor-precios .box-precios .precio h1 {
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: "Manrope", sans-serif;
+  }
+  .contenedor-precios .box-precios .precio p {
+    font-weight: 400;
+    margin: 0px;
+  }
+  .contenedor-precios .box-precios button {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    padding: 5px 20px;
+    font-size: 0.8em;
+    margin-top: 20px;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+  }
+}
+@media (max-width: 710px) {
+  .contenedor-precios {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contenedor-precios .box-precios {
+    width: 70%;
+    padding: 30px 50px;
+  }
+  .contenedor-precios .box-precios h3 {
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-family: "Manrope", sans-serif;
+  }
+  .contenedor-precios .box-precios .precio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .contenedor-precios .box-precios .precio h1 {
+    font-size: 2.8em;
+    font-weight: 800;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: "Manrope", sans-serif;
+  }
+  .contenedor-precios .box-precios .precio p {
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0px;
+  }
+  .contenedor-precios .box-precios .puntos {
+    margin-top: 30px;
+  }
+  .contenedor-precios .box-precios .puntos p {
+    font-size: 1.2em;
+    font-weight: 200;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: "Manrope", sans-serif;
+    text-align: start;
+  }
+}
+@media (max-width: 500px) {
+  .titulo-precios h1 {
+    font-size: 2.5em;
+  }
+  .contenedor-precios {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px 0px 10px;
+  }
+  .contenedor-precios .box-precios {
+    padding: 20px 20px;
+  }
+  .contenedor-precios .box-precios h3 {
+    font-size: 1.8em;
+    font-weight: 800;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-family: "Manrope", sans-serif;
+  }
+  .contenedor-precios .box-precios .precio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .contenedor-precios .box-precios .precio h1 {
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: "Manrope", sans-serif;
+  }
+  .contenedor-precios .box-precios .precio p {
+    font-size: 0.8em;
+    font-weight: 600;
+    margin: 0px;
+  }
+  .contenedor-precios .box-precios .puntos {
+    margin-top: 30px;
+  }
+  .contenedor-precios .box-precios .puntos p {
+    font-size: 1em;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: "Manrope", sans-serif;
+    text-align: start;
+  }
+  .contenedor-precios .box-precios button {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    padding: 5px 20px;
+    font-size: 1em;
+    margin-top: 30px;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+  }
+}
+@media (max-width: 320px) {
+  .titulo-precios h1 {
+    margin-top: 100px;
+  }
+  .contenedor-precios {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 8px 0px 8px;
+  }
+  .contenedor-precios .box-precios {
+    padding: 15px 15px;
+    width: 80%;
+  }
+  .contenedor-precios .box-precios .puntos p {
+    font-size: 0.8em;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: "Manrope", sans-serif;
+  }
+  .contenedor-precios .box-precios button {
+    font-size: 0.8em;
+    margin-top: 20px;
   }
 }
 

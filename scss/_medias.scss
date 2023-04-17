@@ -757,3 +757,181 @@
 
     }
 }
+
+// Precios
+@media (max-width:1090px){
+
+    .contenedor-precios{
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 20px 0px 20px;
+    }
+}
+
+@media (max-width:840px){
+    .contenedor-precios{
+        .box-precios{
+            h3{
+                @include textos (2em, 800, 10px, 0px);
+            }
+    
+            .precio{
+    
+                h1{
+                    @include textos (2.5em, 800, 0px, 0px);
+                }
+    
+                p{
+                    font-weight: $textRegular;
+                    margin: 0px;
+                }
+            }
+    
+            button{
+                font-family: $mainFont;
+                font-weight: $textRegular;
+                padding: 5px 20px;
+                font-size: $textxxxSm;
+                margin-top: 20px;
+                border-radius: 4px;
+                background-color: $mainColor;
+                color: $tercerColor;
+            }
+        }
+    }
+}
+
+@media (max-width:710px){
+    
+    .contenedor-precios{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+        .box-precios{
+            width: 70%;
+            padding: 30px 50px;
+    
+            h3{
+                @include textos (2.2em, 800, 10px, 0px);
+            }
+    
+            .precio{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-end;
+    
+                h1{
+                    @include textos (2.8em, 800, 0px, 0px);
+                }
+    
+                p{
+                    font-size: $textxxSm;
+                    font-weight: $textRegular;
+                    margin: 0px;
+                }
+            }
+    
+            .puntos{
+                margin-top: 30px;
+    
+                p{
+                    @include textos (1.2em, 200, 10px, 10px);
+                    text-align: start;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:500px){
+    .titulo-precios{
+        h1{
+            font-size: $textXLg;
+        }
+    }
+    
+    .contenedor-precios{
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 10px 0px 10px;
+    
+        .box-precios{
+            padding: 20px 20px;
+    
+            h3{
+                @include textos (1.8em, 800, 10px, 0px);
+            }
+    
+            .precio{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-end;
+    
+                h1{
+                    @include textos (2.5em, 800, 0px, 0px);
+                }
+    
+                p{
+                    font-size: $textxxxSm;
+                    font-weight: $textMedium;
+                    margin: 0px;
+                }
+            }
+    
+            .puntos{
+                margin-top: 30px;
+    
+                p{
+                    @include textos (1em, 300, 10px, 10px);
+                    text-align: start;
+                }
+            }
+    
+            button{
+                font-family: $mainFont;
+                font-weight: $textRegular;
+                padding: 5px 20px;
+                font-size: $textxxSm;
+                margin-top: 30px;
+                border-radius: 4px;
+                background-color: $mainColor;
+                color: $tercerColor;
+            }
+        }
+    }
+}
+
+@media (max-width:320px){
+    .titulo-precios{
+        h1{
+            margin-top: 100px;
+        }
+    }
+    
+    .contenedor-precios{
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 8px 0px 8px;
+    
+        .box-precios{
+            padding: 15px 15px;
+            width: 80%;
+    
+            .puntos{
+                p{
+                    @include textos (0.8em, 300, 10px, 10px);
+                }
+            }
+    
+            button{
+                font-size: $textxxxSm;
+                margin-top: 20px;
+            }
+        }
+    }
+}

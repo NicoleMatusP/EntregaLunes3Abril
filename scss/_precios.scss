@@ -1,11 +1,58 @@
-.texto-precios h1{
-    margin-top: 200px;
-    text-align: center;
-    margin-bottom: 0px;
+.titulo-precios{
+    h1{
+        margin-top: 120px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
 }
 
 .contenedor-precios{
     display: flex;
     justify-content: space-between;
     margin: 0px 80px 0px 80px;
+
+    .box-precios{
+        padding: 20px 20px;
+
+        h3{
+            @include textos (1.8em, 800, 10px, 0px);
+        }
+
+        .precio{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+
+            h1{
+                @include textos (2.5em, 800, 0px, 0px);
+            }
+
+            p{
+                font-size: $textxxxSm;
+                font-weight: $textMedium;
+                margin: 0px;
+            }
+        }
+
+        .puntos{
+            margin-top: 30px;
+
+            p{
+                @include textos (1em, 300, 10px, 10px);
+                text-align: start;
+            }
+        }
+
+        button{
+            font-family: $mainFont;
+            font-weight: $textRegular;
+            padding: 5px 20px;
+            font-size: $textxxSm;
+            margin-top: 30px;
+            border-radius: 4px;
+            background-color: $mainColor;
+            color: $tercerColor;
+        }
+    }
 }

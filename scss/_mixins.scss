@@ -22,8 +22,14 @@
 .box-precios{
     @extend .box-gral;
     width: 30%;
-    margin: 80px 20px;
-    padding: 70px 40px;
+    margin: 30px 20px;
+    padding: 30px 30px;
+
+    &:hover{
+        transform: scale(1.099);
+        transition: all 1s;
+        cursor: pointer;
+    }
 }
 
 .box-contacto{
