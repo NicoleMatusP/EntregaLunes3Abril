@@ -89,7 +89,7 @@ html {
   border-bottom: solid 1px rgb(201, 201, 201);
 }
 .botonera img {
-  width: 90%;
+  width: 80%;
 }
 .botonera ul {
   list-style: none;
@@ -246,7 +246,7 @@ html {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 250px 600px 90px 750px 300px;
+  grid-template-rows: 250px 600px 90px 850px 300px;
   gap: 10px;
   grid-template-areas: "nosotros nosotros nosotros nosotros nosotros nosotros" "img img img img img img" "equipo equipo equipo equipo equipo equipo" "figuras figuras figuras figuras figuras figuras" "trabajo trabajo trabajo trabajo trabajo trabajo";
   justify-content: center;
@@ -295,7 +295,7 @@ html {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  width: 30%;
+  width: 40%;
 }
 .grid-main .figuras figure figcaption {
   font-size: 1em;
@@ -313,7 +313,7 @@ html {
   margin-right: 20px;
 }
 .grid-main .figuras figure img {
-  width: 60%;
+  width: 50%;
 }
 .grid-main .trabajo {
   grid-area: trabajo;
@@ -326,6 +326,10 @@ html {
   text-align: center;
   font-size: 1em;
   margin-bottom: 30px;
+}
+.grid-main .trabajo button {
+  background-color: black;
+  color: white;
 }
 
 .titulo-ayuda {
@@ -500,13 +504,15 @@ html {
 }
 
 footer {
-  margin-top: 90px;
-  margin-bottom: 80px;
+  margin: 90px 80px 80px 80px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+footer .logo-footer {
+  width: 50%;
 }
 footer img {
-  width: 30%;
+  width: 20%;
 }
 footer .d-block {
   display: flex;
@@ -517,165 +523,23 @@ footer .d-block:hover {
   color: black;
 }
 footer svg {
+  display: flex;
+  flex-wrap: nowrap;
   fill: black;
   width: 30px;
-  margin-right: 10px;
+  margin-bottom: 10px;
 }
 footer a {
   text-decoration: none;
   color: black;
 }
+footer .terminos-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+}
 
-@media (max-width: 800px) {
-  .grid-main {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 40vh 30vh 30vh 30vh 30vh 100vh 20vh;
-    grid-template-areas: "nosotros nosotros nosotros nosotros" "img2 img2 img2 img2" "img1 img1 img3 img3" "img1 img1 img4 img4" "equipo equipo equipo equipo" "figuras figuras figuras figuras" "trabajo trabajo trabajo trabajo";
-    align-items: center;
-    justify-content: center;
-  }
-  .grid-main .nosotros {
-    text-align: center;
-    margin-left: 80px;
-    margin-right: 80px;
-  }
-  .grid-main .nosotros h1 {
-    font-size: 2em;
-  }
-  .grid-main .equipo {
-    text-align: center;
-    display: flex;
-    align-items: end;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-bottom: 30px;
-  }
-  .grid-main .equipo h1 {
-    font-size: 2em;
-  }
-  .grid-main .figuras {
-    grid-area: figuras;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .grid-main .figuras figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-  }
-  .grid-main .figuras figure figcaption {
-    font-size: 1em;
-    font-weight: 700;
-    margin-top: 20px;
-  }
-  .grid-main .figuras figure p {
-    font-size: 1.8em;
-    text-align: center;
-    margin-top: 5px;
-  }
-  .grid-main .trabajo {
-    grid-area: trabajo;
-    border: solid 1px rgb(201, 201, 201);
-    border-radius: 6px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 20px;
-  }
-  .grid-main .trabajo h1 {
-    text-align: center;
-    font-size: 1.8em;
-    margin-bottom: 10px;
-  }
-  .grid-main .trabajo p {
-    text-align: center;
-    font-size: 1em;
-    margin-bottom: 30px;
-  }
-}
-@media (max-width: 440px) {
-  .grid-main {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 40vh 20vh 20vh 20vh 30vh 200vh 40vh;
-    grid-template-areas: "nosotros nosotros" "img2 img2" "img1 img3" "img1 img4" "equipo equipo" "figuras figuras" "trabajo trabajo";
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-  }
-  .grid-main .nosotros {
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .grid-main .nosotros h1 {
-    font-size: 1.8em;
-  }
-  .grid-main .nosotros p {
-    font-size: 0.8em;
-  }
-  .grid-main .equipo {
-    text-align: center;
-    display: flex;
-    align-items: end;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-  }
-  .grid-main .equipo h1 {
-    font-size: 1.8em;
-    margin-top: 40px;
-  }
-  .grid-main .equipo p {
-    font-size: 0.8em;
-  }
-  .grid-main .figuras {
-    grid-area: figuras;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .grid-main .figuras figure {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 50%;
-  }
-  .grid-main .figuras figure figcaption {
-    font-size: 1em;
-    font-weight: 700;
-    margin-top: 20px;
-    text-align: center;
-  }
-  .grid-main .figuras figure p {
-    font-size: 0.8em;
-    text-align: center;
-    margin-top: 5px;
-  }
-  .grid-main .trabajo {
-    grid-area: trabajo;
-    border: rgb(201, 201, 201);
-    border-radius: 6px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 20px;
-  }
-  .grid-main .trabajo h1 {
-    text-align: center;
-    font-size: 1em;
-    margin-bottom: 10px;
-  }
-  .grid-main .trabajo p {
-    text-align: center;
-    font-size: 0.8em;
-    margin-bottom: 30px;
-  }
-}
 @media (max-width: 1000px) {
   .contenedor-inicio1 h1 {
     font-size: 2.5em;
@@ -789,24 +653,6 @@ footer a {
   }
 }
 @media (max-width: 440px) {
-  .botonera {
-    background-color: white;
-    font-family: "Manrope", sans-serif;
-    font-weight: 400;
-    font-size: 1em;
-    padding: 10px 10px;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: solid 1px rgb(201, 201, 201);
-  }
-  .botonera img {
-    width: 80%;
-  }
   .contenedor-inicio1 {
     margin-left: 20px;
     margin-right: 20px;
@@ -904,60 +750,28 @@ footer a {
     margin-top: 0px;
     font-family: "Manrope", sans-serif;
   }
-  footer {
-    margin: 50px 20px 80px 30px;
-    display: flex;
-    justify-content: space-around;
-  }
-  footer img {
-    width: 30%;
-  }
-  footer .d-block {
-    font-size: 1em;
-    margin-bottom: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  footer .d-block:hover {
-    font-weight: 700;
-    color: black;
-  }
-  footer svg {
-    display: flex;
-    flex-direction: column;
-    fill: black;
-    width: 30px;
-    margin-bottom: 10px;
-  }
-  footer a {
-    text-decoration: none;
-    color: black;
-  }
 }
-@media (max-width: 560px) {
-  .botonera {
-    background-color: white;
-    font-family: "Manrope", sans-serif;
-    font-weight: 400;
-    font-size: 1em;
-    padding: 10px 10px;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: solid 1px rgb(201, 201, 201);
-  }
-  .botonera img {
-    width: 80%;
-  }
-}
-@media (max-width: 420px) {
+@media (max-width: 990px) {
   .botonera {
     flex-wrap: nowrap;
+  }
+  .botonera img {
+    width: 50%;
+  }
+}
+@media (max-width: 630px) {
+  .botonera {
+    flex-wrap: nowrap;
+    padding: 10px 30px;
+  }
+  .botonera img {
+    width: 70%;
+  }
+}
+@media (max-width: 440px) {
+  .botonera {
+    flex-wrap: nowrap;
+    padding: 10px 10px;
   }
   .botonera img {
     width: 80%;
@@ -1462,6 +1276,231 @@ footer a {
   }
   .accordion .accordion-body {
     font-size: 0.8em;
+  }
+}
+@media (max-width: 900px) {
+  footer img {
+    width: 40%;
+  }
+  footer .terminos-logos {
+    width: 90%;
+  }
+}
+@media (max-width: 780px) {
+  footer {
+    margin: 90px 80px 80px 80px;
+  }
+  footer img {
+    width: 40%;
+  }
+  footer .terminos-logos {
+    width: 100%;
+  }
+  footer .d-block {
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .d-block:hover {
+    font-weight: 700;
+    color: black;
+  }
+}
+@media (max-width: 490px) {
+  footer {
+    margin: 90px 40px 80px 40px;
+  }
+  footer img {
+    width: 40%;
+  }
+  footer .terminos-logos {
+    width: 100%;
+  }
+  footer .d-block {
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .d-block:hover {
+    font-weight: 700;
+    color: black;
+  }
+}
+@media (max-width: 390px) {
+  footer {
+    margin: 90px 20px 40px 20px;
+  }
+  footer img {
+    width: 60%;
+  }
+  footer .terminos-logos {
+    width: 100%;
+  }
+  footer .d-block {
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .d-block:hover {
+    font-weight: 700;
+    color: black;
+  }
+  footer svg {
+    display: flex;
+    flex-wrap: nowrap;
+    fill: black;
+    width: 20px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .grid-main {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 40vh 30vh 30vh 30vh 30vh 100vh 20vh;
+    grid-template-areas: "nosotros nosotros nosotros nosotros" "img2 img2 img2 img2" "img1 img1 img3 img3" "img1 img1 img4 img4" "equipo equipo equipo equipo" "figuras figuras figuras figuras" "trabajo trabajo trabajo trabajo";
+    align-items: center;
+    justify-content: center;
+  }
+  .grid-main .nosotros {
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .grid-main .nosotros h1 {
+    font-size: 2em;
+  }
+  .grid-main .equipo {
+    text-align: center;
+    display: flex;
+    align-items: end;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 30px;
+  }
+  .grid-main .equipo h1 {
+    font-size: 2em;
+  }
+  .grid-main .figuras {
+    grid-area: figuras;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .grid-main .figuras figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+  }
+  .grid-main .figuras figure figcaption {
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+  .grid-main .figuras figure p {
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .grid-main .trabajo {
+    grid-area: trabajo;
+    border: solid 1px rgb(201, 201, 201);
+    border-radius: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+  }
+  .grid-main .trabajo h1 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  .grid-main .trabajo p {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 440px) {
+  .grid-main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40vh 20vh 20vh 20vh 30vh 200vh 40vh;
+    grid-template-areas: "nosotros nosotros" "img2 img2" "img1 img3" "img1 img4" "equipo equipo" "figuras figuras" "trabajo trabajo";
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  .grid-main .nosotros {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .grid-main .nosotros h1 {
+    font-size: 1.8em;
+  }
+  .grid-main .nosotros p {
+    font-size: 0.8em;
+  }
+  .grid-main .equipo {
+    text-align: center;
+    display: flex;
+    align-items: end;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  .grid-main .equipo h1 {
+    font-size: 1.8em;
+    margin-top: 40px;
+  }
+  .grid-main .equipo p {
+    font-size: 0.8em;
+  }
+  .grid-main .figuras {
+    grid-area: figuras;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .grid-main .figuras figure {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 50%;
+  }
+  .grid-main .figuras figure figcaption {
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .grid-main .figuras figure p {
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .grid-main .trabajo {
+    grid-area: trabajo;
+    border: rgb(201, 201, 201);
+    border-radius: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+  }
+  .grid-main .trabajo h1 {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  .grid-main .trabajo p {
+    text-align: center;
+    font-size: 0.8em;
+    margin-bottom: 30px;
   }
 }
 @keyframes animateindex {

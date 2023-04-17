@@ -1,11 +1,14 @@
 footer{
-    margin-top: 90px;
-    margin-bottom: 80px;
+    margin: 90px 80px 80px 80px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
+    .logo-footer{
+        width: 50%;
+    }
 
     img{
-        width: 30%;
+        width: 20%;
     }
 
     .d-block{
@@ -18,13 +21,22 @@ footer{
     }
 
     svg{
+        display: flex;
+        flex-wrap: nowrap;
         fill: $mainColor;
         width: 30px;
-        margin-right: 10px;
+        margin-bottom: 10px;
     }
 
     a{
         text-decoration: none;
         color: $mainColor;
+    }
+
+    .terminos-logos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 60%;
     }
 }
