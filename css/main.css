@@ -182,26 +182,6 @@ html {
   animation-timing-function: ease-out;
 }
 
-@keyframes animateindex {
-  0% {
-    width: 10%;
-  }
-  25% {
-    width: 15%;
-  }
-  50% {
-    width: 25%;
-  }
-  75% {
-    width: 60%;
-  }
-  80% {
-    width: 80%;
-  }
-  100% {
-    width: 100%;
-  }
-}
 .texto-1 {
   margin-right: 100px;
   width: 50%;
@@ -1341,6 +1321,26 @@ footer a {
   .contenedor-precios .box-precios button {
     font-size: 0.8em;
     margin-top: 20px;
+  }
+}
+@keyframes animateindex {
+  0% {
+    width: 10%;
+  }
+  25% {
+    width: 15%;
+  }
+  50% {
+    width: 25%;
+  }
+  75% {
+    width: 60%;
+  }
+  80% {
+    width: 80%;
+  }
+  100% {
+    width: 100%;
   }
 }
 
