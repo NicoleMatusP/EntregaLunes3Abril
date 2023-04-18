@@ -1,0 +1,17 @@
+.error{
+    text-align: center;
+    margin-top: 200px;
+    h1{
+        margin-bottom: 50px;
+    }
+    a{
+        font-family: $mainFont;
+        font-weight: $textRegular;
+        padding: 10px 20px;
+        font-size: $textxxSm;
+        margin-top: 30px;
+        border-radius: 4px;
+        background-color: $mainColor;
+        color: $tercerColor;
+    }
+}
