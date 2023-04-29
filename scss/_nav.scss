@@ -11,29 +11,38 @@
     width: 100%;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     border-bottom: solid 1px rgb(201, 201, 201);
-    
-    img{
-        width: 50%;
-    }
 
-    ul{
-        list-style: none;
+    .container-fluid{
         display: flex;
-        
-        li{
-            margin-left: 30px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
 
-            a{
-                color: $mainColor;
-                text-decoration: none;
-                cursor: pointer;
-                &:hover{
-                    font-weight: $textExtraBold;
-                }
+        .navbar-brand{
+            width: 30%;
+            img{
+                width: 100%;
             }
         }
+
+            ul{
+                list-style: none;
+                display: flex;
+                li{
+                    margin-left: 30px;
+                    a{
+                        width: 100%;
+                        color: $mainColor;
+                        text-decoration: none;
+                        cursor: pointer;
+                        &:hover{
+                            font-weight: $textExtraBold;
+                        }
+                    }
+                }
+            } 
     }
 }

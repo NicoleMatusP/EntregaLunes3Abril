@@ -84,26 +84,36 @@ html {
   width: 100%;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   border-bottom: solid 1px rgb(201, 201, 201);
 }
-.botonera img {
-  width: 50%;
+.botonera .container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
-.botonera ul {
+.botonera .container-fluid .navbar-brand {
+  width: 30%;
+}
+.botonera .container-fluid .navbar-brand img {
+  width: 100%;
+}
+.botonera .container-fluid ul {
   list-style: none;
   display: flex;
 }
-.botonera ul li {
+.botonera .container-fluid ul li {
   margin-left: 30px;
 }
-.botonera ul li a {
+.botonera .container-fluid ul li a {
+  width: 100%;
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
-.botonera ul li a:hover {
+.botonera .container-fluid ul li a:hover {
   font-weight: 800;
 }
 
@@ -712,7 +722,7 @@ footer .terminos-logos {
     font-family: "Manrope", sans-serif;
   }
 }
-@media (max-width: 990px) {
+@media (max-width: 991px) {
   .botonera {
     flex-wrap: nowrap;
   }
