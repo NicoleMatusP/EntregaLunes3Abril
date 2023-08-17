@@ -5,7 +5,7 @@
     font-family: $mainFont;
     font-weight: $textRegular;
     font-size: $textxxSm;
-    padding: 10px 80px;
+    padding: 30px 80px 20px 80px;
     position: fixed;
     top: 0px;
     width: 100%;
@@ -13,7 +13,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: solid 1px rgb(201, 201, 201);
 
     .container-fluid{
         display: flex;
@@ -24,7 +23,7 @@
         .navbar-brand{
             width: 30%;
             img{
-                width: 100%;
+                width: 40%;
             }
         }
 

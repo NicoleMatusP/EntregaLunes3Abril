@@ -50,12 +50,12 @@ p {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 3em;
   padding: 0px;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2.2em;
 }
 
 h3 {
@@ -78,7 +78,7 @@ html {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 1em;
-  padding: 10px 80px;
+  padding: 30px 80px 20px 80px;
   position: fixed;
   top: 0px;
   width: 100%;
@@ -86,7 +86,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: solid 1px rgb(201, 201, 201);
 }
 .botonera .container-fluid {
   display: flex;
@@ -98,7 +97,7 @@ html {
   width: 30%;
 }
 .botonera .container-fluid .navbar-brand img {
-  width: 100%;
+  width: 40%;
 }
 .botonera .container-fluid ul {
   list-style: none;
@@ -120,7 +119,7 @@ html {
 .contenedor-inicio1 {
   margin-left: 80px;
   margin-right: 80px;
-  margin-top: 200px;
+  margin-top: 150px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -155,6 +154,32 @@ html {
 
 .contenedor-match {
   background-color: rgb(65, 110, 242);
+  border-radius: 43px;
+  height: 300px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-match .texto-match {
+  width: 800px;
+}
+.contenedor-match .texto-match h2 {
+  font-size: 2.5em;
+  color: white;
+  margin-bottom: 20px;
+}
+.contenedor-match .texto-match h2 mark {
+  background-color: black;
+  color: white;
+}
+.contenedor-match .texto-match p {
+  font-size: 1.563em;
+  color: white;
 }
 
 .texto-1 {
@@ -162,27 +187,15 @@ html {
   width: 50%;
 }
 
-.contenedor-inicio2 {
-  margin-top: 100px;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+.contenedor-proceso {
+  margin-top: 150px;
 }
-.contenedor-inicio2 figure {
-  width: 20%;
-}
-.contenedor-inicio2 figure img {
-  width: 50%;
-}
-.contenedor-inicio2 figure figcaption {
+.contenedor-proceso div h2 {
   font-size: 2.5em;
-  font-weight: 800;
-  margin-top: 10px;
+  margin-bottom: 20px;
 }
-.contenedor-inicio2 figure p {
+.contenedor-proceso div p {
   font-size: 1.563em;
-  font-weight: 700;
-  margin-top: 5px;
 }
 
 .contenedor-inicio3 {
@@ -874,7 +887,7 @@ footer .terminos-logos {
 }
 @media (max-width: 400px) {
   .header-contacto h1 {
-    font-size: 2em;
+    font-size: 2.2em;
     margin-top: 130px;
     text-align: center;
   }
@@ -1437,7 +1450,7 @@ footer .terminos-logos {
     margin-right: 30px;
   }
   .grid-main .nosotros h1 {
-    font-size: 2em;
+    font-size: 2.2em;
   }
   .grid-main .nosotros p {
     font-size: 0.8em;
@@ -1464,7 +1477,7 @@ footer .terminos-logos {
     margin-bottom: 30px;
   }
   .grid-main .equipo h2 {
-    font-size: 2em;
+    font-size: 2.2em;
   }
   .grid-main .figuras {
     margin-left: 20px;
@@ -1520,7 +1533,7 @@ footer .terminos-logos {
     margin-right: 30px;
   }
   .grid-main .nosotros h1 {
-    font-size: 2em;
+    font-size: 2.2em;
   }
   .grid-main .nosotros p {
     font-size: 0.8em;
