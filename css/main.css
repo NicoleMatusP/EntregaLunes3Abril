@@ -153,6 +153,10 @@ html {
   color: white;
 }
 
+.contenedor-match {
+  background-color: rgb(65, 110, 242);
+}
+
 .texto-1 {
   margin-right: 100px;
   width: 50%;
