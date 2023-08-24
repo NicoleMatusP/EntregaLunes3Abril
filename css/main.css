@@ -190,12 +190,19 @@ html {
   flex-direction: column;
   justify-content: space-between;
   gap: 60px;
+  margin-top: 150px;
 }
 .contenedor-proceso .comolohacemos {
   margin-bottom: 10px;
 }
-
-.contenedor-pasos {
+.contenedor-proceso .comolohacemos h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+.contenedor-proceso .comolohacemos p {
+  font-size: 1.563em;
+}
+.contenedor-proceso .contenedor-pasos {
   background-color: white;
   border-radius: 16px;
   box-shadow: 4px 4px 27px 1px rgba(0, 0, 0, 0.15);
@@ -209,46 +216,83 @@ html {
   padding: 64px;
   gap: 40px;
 }
-.contenedor-pasos .texto-pasos {
+.contenedor-proceso .contenedor-pasos .texto-pasos {
   text-align: left;
   width: 500px;
 }
-.contenedor-pasos .texto-pasos h3 {
+.contenedor-proceso .contenedor-pasos .texto-pasos h3 {
   font-size: 1.563em;
   margin-bottom: 30px;
 }
-.contenedor-pasos .texto-pasos h3 mark {
+.contenedor-proceso .contenedor-pasos .texto-pasos h3 mark {
   background-color: black;
   color: white;
 }
-.contenedor-pasos .texto-pasos p {
+.contenedor-proceso .contenedor-pasos .texto-pasos p {
   font-size: 1em;
 }
-.contenedor-pasos .texto-pasos .texto-negrita {
+.contenedor-proceso .contenedor-pasos .texto-pasos .texto-negrita {
   font-weight: 800;
 }
-.contenedor-pasos img {
+.contenedor-proceso .contenedor-pasos img {
   height: 100%;
+}
+
+.contenedor-ventajas {
+  background-color: black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-bottom: 70px;
+}
+.contenedor-ventajas .texto-startup-ventajas {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-left: 140px;
+  gap: 40px;
+  margin-bottom: 80px;
+  padding-top: 80px;
+}
+.contenedor-ventajas .texto-startup-ventajas h2 {
+  color: white;
+  margin: 0px;
+}
+.contenedor-ventajas .texto-startup-ventajas p {
+  color: white;
+  margin: 0px;
+}
+.contenedor-ventajas .cada-ventaja {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.contenedor-ventajas .cada-ventaja figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  text-align: start;
+}
+.contenedor-ventajas .cada-ventaja figure img {
+  width: 20%;
+}
+.contenedor-ventajas .cada-ventaja figure figcaption {
+  margin-top: 20px;
+  color: white;
+  font-size: 1.438em;
+  font-weight: 700;
+}
+.contenedor-ventajas .cada-ventaja figure p {
+  color: white;
 }
 
 .texto-1 {
   margin-right: 100px;
   width: 50%;
-}
-
-.contenedor-proceso {
-  margin-top: 150px;
-}
-.contenedor-proceso div h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-.contenedor-proceso div p {
-  font-size: 1.563em;
-}
-
-.contenedor-inicio3 {
-  margin: 150px 200px 50px 200px;
 }
 
 .contenedor-startups {

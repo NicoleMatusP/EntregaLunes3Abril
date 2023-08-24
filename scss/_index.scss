@@ -82,62 +82,10 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 60px;
+    margin-top: 150px;
 
     .comolohacemos{
         margin-bottom: 10px;
-    }
-}
-
-.contenedor-pasos{
-    background-color: white;
-    border-radius: 16px;
-    box-shadow: 4px 4px 27px 1px rgba(0, 0, 0, 0.15);
-    margin-left: 130px;
-    margin-right: 130px;
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 64px;
-    gap: 40px;
-
-    .texto-pasos{
-        text-align:left;
-        width: 500px;
-
-        h3{
-            font-size: $textSm;
-            margin-bottom: 30px;
-            mark {
-                background-color: black;
-                color: white;
-            }
-        }
-
-        p{
-            font-size: $textxxSm;
-        }
-
-        .texto-negrita{
-            font-weight: $textExtraBold;
-        }
-    }
-
-    img{
-        height: 100%;
-    }
-}
-
-.texto-1{
-    margin-right: 100px;
-    width: 50%;
-}
-
-.contenedor-proceso{
-    margin-top: 150px;
-
-    div{
         h2{
             font-size: $textXLg;
             margin-bottom: 20px;
@@ -147,12 +95,113 @@
             font-size: $textSm;
         }
     }
+
+    .contenedor-pasos{
+        background-color: white;
+        border-radius: 16px;
+        box-shadow: 4px 4px 27px 1px rgba(0, 0, 0, 0.15);
+        margin-left: 130px;
+        margin-right: 130px;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 64px;
+        gap: 40px;
+    
+        .texto-pasos{
+            text-align:left;
+            width: 500px;
+    
+            h3{
+                font-size: $textSm;
+                margin-bottom: 30px;
+                mark {
+                    background-color: black;
+                    color: white;
+                }
+            }
+    
+            p{
+                font-size: $textxxSm;
+            }
+    
+            .texto-negrita{
+                font-weight: $textExtraBold;
+            }
+        }
+    
+        img{
+            height: 100%;
+        }
+    }
 }
 
-.contenedor-inicio3{
-    margin: 150px 200px 50px 200px;
+.contenedor-ventajas{
+    background-color: black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-bottom: 70px;
+    
+    .texto-startup-ventajas{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        margin-left: 140px;
+        gap: 40px;
+        margin-bottom: 80px;
+        padding-top: 80px;
+
+        h2{
+            color: white;
+            margin: 0px;
+        }
+
+        p{
+            color: white;
+            margin: 0px;
+        }
+    }
+
+    .cada-ventaja{
+        display: flex;
+        flex-direction: row;
+        justify-content:left;
+        gap: 50px;
+        margin-left: 200px;
+        margin-right: 200px;
+
+        figure{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: flex-start;
+            text-align: start;
+
+            img{
+                width: 20%;
+            }
+
+            figcaption{
+                margin-top: 20px;
+                color: white;
+                font-size: $textxSm;
+                font-weight: $textbold;
+            }
+
+            p{
+                color: white;
+            }
+        }
+    }
 }
 
+.texto-1{
+    margin-right: 100px;
+    width: 50%;
+}
 
 .contenedor-startups{
     display: flex;
