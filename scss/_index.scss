@@ -1,17 +1,18 @@
 .contenedor-inicio1{
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 150px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 
     img{
         height: 100%;
         width: 50%;
     }
 
-    div{
+    .texto-1{
         width: 100%;
 
         h1{
@@ -19,8 +20,14 @@
         }
 
         p{
-            @include textos (1.5em, 400, 30px, 30px);
+            @include textos (1.3em, 400, 30px, 30px);
         }
+    }
+    .botones{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap: 40px;
 
         button{
             font-family: $mainFont;
@@ -32,6 +39,7 @@
             background-color: $mainColor;
             color: $tercerColor;
         }
+
     }
 }
 
@@ -69,6 +77,58 @@
     }
 }
 
+.contenedor-proceso{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
+
+    .comolohacemos{
+        margin-bottom: 10px;
+    }
+}
+
+.contenedor-pasos{
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 4px 4px 27px 1px rgba(0, 0, 0, 0.15);
+    margin-left: 130px;
+    margin-right: 130px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 64px;
+    gap: 40px;
+
+    .texto-pasos{
+        text-align:left;
+        width: 500px;
+
+        h3{
+            font-size: $textSm;
+            margin-bottom: 30px;
+            mark {
+                background-color: black;
+                color: white;
+            }
+        }
+
+        p{
+            font-size: $textxxSm;
+        }
+
+        .texto-negrita{
+            font-weight: $textExtraBold;
+        }
+    }
+
+    img{
+        height: 100%;
+    }
+}
+
 .texto-1{
     margin-right: 100px;
     width: 50%;
@@ -90,29 +150,36 @@
 }
 
 .contenedor-inicio3{
-    margin: 100px 200px 20px 200px;
+    margin: 150px 200px 50px 200px;
 }
 
 
-.contenedor-testimonios{
+.contenedor-startups{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    gap: 10px;
 
-    figure{
+    .box-testimonios{
+        width: 40%;
+        margin: 30px;
+        text-align: start;
+
         img{
-            width: 20%;
+            width: 50%;
+            margin-bottom: 20px;
         }
 
         figcaption{
             margin-top: 20px;
-            font-size: $textxSm;
+            font-size: $textxxSm;
             font-weight: $textMedium;
         }
 
         p{
-            @include textos (1em, 400, 10px, 10px);
+            @include textos (0.9em, 400, 10px, 10px);
         }
     }
 }

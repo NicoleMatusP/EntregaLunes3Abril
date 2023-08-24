@@ -4,14 +4,6 @@
     border-radius: 6px;
 }
 
-.box-testimonios{
-    @extend .box-gral;
-    width: 40%;
-    padding: 20px 30px;
-    margin: 30px;
-    text-align: start;
-}
-
 .box-trabajo{
     @extend .box-gral;
     margin-left: 200px;
