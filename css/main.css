@@ -204,7 +204,7 @@ html {
 }
 .contenedor-proceso .contenedor-pasos {
   background-color: white;
-  border-radius: 16px;
+  border-radius: 25px;
   box-shadow: 4px 4px 27px 1px rgba(0, 0, 0, 0.15);
   margin-left: 130px;
   margin-right: 130px;
@@ -307,6 +307,9 @@ html {
   width: 40%;
   margin: 30px;
   text-align: start;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 4px 4px 27px 1px rgba(0, 0, 0, 0.15);
 }
 .contenedor-startups .box-testimonios img {
   width: 50%;
