@@ -17,7 +17,7 @@
         @include textos (0.6em, 600, 0px, 0px);
         &:not(.collapsed){
             color: black;
-            background-color: $tercerColor;
+            background-color: $thirdColor;
         }
     }
 }

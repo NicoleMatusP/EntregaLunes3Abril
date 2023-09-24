@@ -1,6 +1,6 @@
 // nesting
 
-.botonera{
+.navbar{
     background-color: #FBFCFF;
     font-family: $mainFont;
     font-weight: $textRegular;
@@ -19,6 +19,14 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
+
+        a{
+            width: 30%;
+
+            img{
+                width: 10%;
+            }
+        }
 
         .navbar-brand{
             width: 30%;
