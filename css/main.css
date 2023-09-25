@@ -70,7 +70,7 @@ html {
   margin: 0px;
 }
 
-.navbar {
+.botonera {
   background-color: #FBFCFF;
   font-family: "Manrope", sans-serif;
   font-weight: 400;
@@ -84,41 +84,41 @@ html {
   align-items: center;
   justify-content: space-between;
 }
-.navbar .container-fluid, .navbar .container-xxl, .navbar .container-xl, .navbar .container-lg, .navbar .container-md, .navbar .container-sm {
+.botonera .container-fluid, .botonera .container-xxl, .botonera .container-xl, .botonera .container-lg, .botonera .container-md, .botonera .container-sm {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
-.navbar .container-fluid a, .navbar .container-xxl a, .navbar .container-xl a, .navbar .container-lg a, .navbar .container-md a, .navbar .container-sm a {
+.botonera .container-fluid a, .botonera .container-xxl a, .botonera .container-xl a, .botonera .container-lg a, .botonera .container-md a, .botonera .container-sm a {
   width: 30%;
 }
-.navbar .container-fluid a img, .navbar .container-xxl a img, .navbar .container-xl a img, .navbar .container-lg a img, .navbar .container-md a img, .navbar .container-sm a img {
+.botonera .container-fluid a img, .botonera .container-xxl a img, .botonera .container-xl a img, .botonera .container-lg a img, .botonera .container-md a img, .botonera .container-sm a img {
   width: 10%;
 }
-.navbar .container-fluid .navbar-brand, .navbar .container-xxl .navbar-brand, .navbar .container-xl .navbar-brand, .navbar .container-lg .navbar-brand, .navbar .container-md .navbar-brand, .navbar .container-sm .navbar-brand {
+.botonera .container-fluid .navbar-brand, .botonera .container-xxl .navbar-brand, .botonera .container-xl .navbar-brand, .botonera .container-lg .navbar-brand, .botonera .container-md .navbar-brand, .botonera .container-sm .navbar-brand {
   width: 30%;
 }
-.navbar .container-fluid .navbar-brand img, .navbar .container-xxl .navbar-brand img, .navbar .container-xl .navbar-brand img, .navbar .container-lg .navbar-brand img, .navbar .container-md .navbar-brand img, .navbar .container-sm .navbar-brand img {
+.botonera .container-fluid .navbar-brand img, .botonera .container-xxl .navbar-brand img, .botonera .container-xl .navbar-brand img, .botonera .container-lg .navbar-brand img, .botonera .container-md .navbar-brand img, .botonera .container-sm .navbar-brand img {
   width: 50%;
 }
-.navbar .container-fluid ul, .navbar .container-xxl ul, .navbar .container-xl ul, .navbar .container-lg ul, .navbar .container-md ul, .navbar .container-sm ul {
+.botonera .container-fluid ul, .botonera .container-xxl ul, .botonera .container-xl ul, .botonera .container-lg ul, .botonera .container-md ul, .botonera .container-sm ul {
   list-style: none;
   display: flex;
 }
-.navbar .container-fluid ul .btn, .navbar .container-xxl ul .btn, .navbar .container-xl ul .btn, .navbar .container-lg ul .btn, .navbar .container-md ul .btn, .navbar .container-sm ul .btn {
+.botonera .container-fluid ul .btn, .botonera .container-xxl ul .btn, .botonera .container-xl ul .btn, .botonera .container-lg ul .btn, .botonera .container-md ul .btn, .botonera .container-sm ul .btn {
   margin-left: 30px;
 }
-.navbar .container-fluid ul li, .navbar .container-xxl ul li, .navbar .container-xl ul li, .navbar .container-lg ul li, .navbar .container-md ul li, .navbar .container-sm ul li {
+.botonera .container-fluid ul li, .botonera .container-xxl ul li, .botonera .container-xl ul li, .botonera .container-lg ul li, .botonera .container-md ul li, .botonera .container-sm ul li {
   margin-left: 30px;
 }
-.navbar .container-fluid ul li a, .navbar .container-xxl ul li a, .navbar .container-xl ul li a, .navbar .container-lg ul li a, .navbar .container-md ul li a, .navbar .container-sm ul li a {
+.botonera .container-fluid ul li a, .botonera .container-xxl ul li a, .botonera .container-xl ul li a, .botonera .container-lg ul li a, .botonera .container-md ul li a, .botonera .container-sm ul li a {
   width: 100%;
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
-.navbar .container-fluid ul li a:hover, .navbar .container-xxl ul li a:hover, .navbar .container-xl ul li a:hover, .navbar .container-lg ul li a:hover, .navbar .container-md ul li a:hover, .navbar .container-sm ul li a:hover {
+.botonera .container-fluid ul li a:hover, .botonera .container-xxl ul li a:hover, .botonera .container-xl ul li a:hover, .botonera .container-lg ul li a:hover, .botonera .container-md ul li a:hover, .botonera .container-sm ul li a:hover {
   font-weight: 800;
 }
 
