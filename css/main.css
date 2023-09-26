@@ -13593,5 +13593,13 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.btn__nico {
+   /*aqui tu puedes poner estilos por sobre la clase de bootstrap
+   estilos generales.
+   */
+   &:hover{
+    color: white
+   }
+}
 
 /*# sourceMappingURL=main.css.map */
