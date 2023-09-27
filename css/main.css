@@ -1704,6 +1704,7 @@ footer .terminos-logos {
     width: 70%;
   }
 }
+
 @keyframes animateindex {
   0% {
     width: 10%;
@@ -13593,6 +13594,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
 .btn__nico {
    /*aqui tu puedes poner estilos por sobre la clase de bootstrap
    estilos generales.
@@ -13600,6 +13602,95 @@ textarea.form-control-lg {
    &:hover{
     color: white
    }
+}
+
+.hablemos-rojo{
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #F25041;
+  border-radius: 43px;
+  height: 300px;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+.contenedor-hablemos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  gap: 50px;
+}
+
+.texto-form{
+  text-align: start;
+  width: 50%;
+}
+
+.titulo-hablemos{
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.form-hablemos{
+  align-items: start;
+  width: 50%;
+}
+
+.form-control{
+  margin-top: 10px;
+}
+
+.form-select{
+  margin-top: 10px;
+}
+
+@keyframes slide {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
+
+.logos{
+  overflow: hidden;
+  padding: 30px 0;
+  background: #FBFCFF;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(to left, #416EF2, red);
+  content: ;
+  z-index: 2;
+}
+
+.logos:hover .logos-slide{
+  animation-play-state: paused;
+}
+
+.logos-slide{
+  animation: 35s slide infinite linear;
+  display: inline-block;
+}
+
+.logos-slide img{
+  height: 50px;
+  margin: 0 40px;
 }
 
 /*# sourceMappingURL=main.css.map */
