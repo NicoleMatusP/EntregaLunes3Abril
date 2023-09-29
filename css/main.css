@@ -13627,17 +13627,20 @@ textarea.form-control-lg {
    }
 }
 
+/* Hablemos Index */
+
 .hablemos-rojo{
-  padding-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 50px 50px;
   background-color: #F25041;
   border-radius: 43px;
-  height: 300px;
   margin-top: 70px;
   margin-bottom: 100px;
   margin-left: 100px;
   margin-right: 100px;
+}
+
+.hablemos-rojo .titulo-hablemos{
+  color: white;
 }
 
 
@@ -13652,6 +13655,7 @@ textarea.form-control-lg {
 .texto-form{
   text-align: start;
   width: 50%;
+  margin-top: 20px;
 }
 
 .titulo-hablemos{
@@ -13664,6 +13668,10 @@ textarea.form-control-lg {
 .form-hablemos{
   align-items: start;
   width: 50%;
+}
+
+.form-hablemos .btn{
+
 }
 
 .form-control{
