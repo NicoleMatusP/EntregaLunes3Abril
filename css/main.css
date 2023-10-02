@@ -138,29 +138,34 @@ html {
 }
 
 .contenedor-body .contenedor-match {
+  box-shadow: -1px -13px 20px rgba(160, 160, 160, 0.3);
   background-color: #416EF2;
-  border-radius: 43px;
-  height: 300px;
-  margin-top: 100px;
+  border-top-right-radius: 5em;
+  border-top-left-radius: 5em;
+  margin-top: 80px;
   margin-bottom: 100px;
-  margin-left: 100px;
-  margin-right: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .contenedor-body .contenedor-match .texto-match {
-  width: 800px;
+  margin-top: 150px;
+  margin-left: 90px;
+  margin-right: 90px;
 }
-.contenedor-body .contenedor-match .texto-match h2, .contenedor-body .contenedor-match .texto-match .h2 {
-  font-size: 2.5em;
+.contenedor-body .contenedor-match .texto-match h2 {
+  font-size: 3.5em;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
   color: white;
   margin-bottom: 20px;
 }
+
 .contenedor-body .contenedor-match .texto-match h2 mark, .contenedor-body .contenedor-match .texto-match h2 .mark, .contenedor-body .contenedor-match .texto-match .h2 mark, .contenedor-body .contenedor-match .texto-match .h2 .mark {
   background-color: black;
   color: white;
+  padding: 3px 5px;
 }
 .contenedor-body .contenedor-match .texto-match p {
   font-size: 1.563em;
