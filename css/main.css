@@ -29,38 +29,10 @@
   justify-content: space-between;
 }
 
-h1, .h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4 {
-  color: black;
-  font-family: "Manrope", sans-serif;
-  font-weight: 800;
-}
 
 p {
   color: black;
   font-family: "Manrope", sans-serif;
-}
-
-h1, .h1 {
-  font-size: 3em;
-  padding: 0px;
-}
-
-h2, .h2 {
-  font-size: 2.2em;
-}
-
-h3, .h3 {
-  font-size: 1.8em;
-}
-
-h4, .h4 {
-  font-size: 1.563em;
 }
 
 html {
@@ -143,14 +115,17 @@ html {
   margin-right: 90px;
   width: 100%;
 }
+
+/* Tipografía de título */
 .contenedor-body .contenedor-inicio1 .texto-1 h1, .contenedor-body .contenedor-inicio1 .texto-1 .h1 {
   font-weight: 800;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "Manrope", sans-serif;
   margin-top: 0px;
-  font-size: 3.5em;
+  font-size: 4em;
 }
+
 .contenedor-body .contenedor-inicio1 .texto-1 p {
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 400;
   margin-bottom: 30px;
   margin-top: 30px;
@@ -13631,18 +13606,13 @@ textarea.form-control-lg {
 
 .hablemos-rojo{
   padding: 50px 50px;
-  background-color: #F25041;
+  background-color: #FDB633;
   border-radius: 43px;
   margin-top: 70px;
   margin-bottom: 100px;
   margin-left: 100px;
   margin-right: 100px;
 }
-
-.hablemos-rojo .titulo-hablemos{
-  color: white;
-}
-
 
 .contenedor-hablemos{
   display: flex;
