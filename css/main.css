@@ -117,12 +117,14 @@ html {
 }
 
 /* Tipografía de título */
-.contenedor-body .contenedor-inicio1 .texto-1 h1, .contenedor-body .contenedor-inicio1 .texto-1 .h1 {
+.contenedor-body .contenedor-inicio1 .texto-1 h1{
   font-weight: 800;
   font-family: "Manrope", sans-serif;
   margin-top: 0px;
   font-size: 4em;
 }
+
+
 
 .contenedor-body .contenedor-inicio1 .texto-1 p {
   font-size: 1.2em;
