@@ -13576,12 +13576,11 @@ textarea.form-control-lg {
    padding: 12px 24px;
    font-size: 1.0625rem;
    font-family: 'Manrope', sans-serif;
-   background-color: #0d6efd;
+   background-color: #416EF2;
    color: white;
    font-weight: 500;
    &:active{
     color: #416EF2;
-
    }
    &:hover{
     color: #416EF2;
